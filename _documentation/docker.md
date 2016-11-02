@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Docker
-permalink: /documentation/docker/
+permalink: /docker/
 ---
 
 [Docker](http://docker.com/) can be used to bundle Caleydo Web packages into containers. 

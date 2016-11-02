@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Plugins
-permalink: /documentation/plugins/
+permalink: /plugins/
 ---
 
 Caleydo Web components are found on [GitHub](https://github.com/Caleydo). To facilitate installation of Caleydo Web, a [container repository](https://github.com/Caleydo/caleydo_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 

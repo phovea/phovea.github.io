@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Caleydo Directory Structure
-permalink: /documentation/directory_structure/
+permalink: /directory_structure/
 description: Explains the basic directory structure
 ---
 

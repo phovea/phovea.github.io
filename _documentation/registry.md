@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Registry
-permalink: /documentation/registry/
+permalink: /registry/
 ---
 
 registry.caleydo.org ... published compiled plugins with a specific version

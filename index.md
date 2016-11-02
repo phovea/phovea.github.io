@@ -3,7 +3,7 @@ layout: documentation
 title: Welcome
 weight: 2
 tag: documentation
-permalink: /documentation/
+permalink: /
 ---
 
 Caleydo Web is a platform for developing web-based visualization applications. Caleydo provides sophisticated infrastructure for **managing data**, **syncrhonizing views**, **tracking history**, etc. Caleydo Web comes in two flavors: 

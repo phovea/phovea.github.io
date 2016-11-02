@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Plugin Mechanism
-permalink: /documentation/plugin_mechanism/
+permalink: /plugin_mechanism/
 ---
 
 {% include todo.html %}
