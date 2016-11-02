@@ -1,7 +1,7 @@
 ---
 layout: docs_section
 title: Tutorials
-permalink: /documentation/tutorial/
+permalink: /tutorial/
 type: tutorial/
 ---
 

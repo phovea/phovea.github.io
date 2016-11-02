@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Setting up Vagrant
-permalink: /documentation/vagrant/
+permalink: /vagrant/
 ---
 
 Note: Setting up a dev environment requires a working installation of Git!

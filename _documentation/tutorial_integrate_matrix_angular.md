@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Integrate Caleydo's Matrix Visualization with Angular
-permalink: /documentation/tutorial_angular_heatmap_integration/
+permalink: /tutorial_angular_heatmap_integration/
 nomenu: true
 description: Learn how to integrate Caleydo into an Angular application.
 ---

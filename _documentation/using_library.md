@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Using Library Version
-permalink: /documentation/using_library/
+permalink: /using_library/
 ----------------------------------------
 
 {% include todo.html %}

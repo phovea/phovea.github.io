@@ -4,10 +4,6 @@ layout: default
 
 <div class="documentation">
 
-    <header class="docs-title">
-        <h1>Documentation</h1>
-    </header>
-
     <article class="docs-content-aside">
 
         <ul>
@@ -23,13 +19,13 @@ layout: default
                         <a href="{{ navitem.href }}">{{ navitem.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
      <i class="fa fa-angle-down" aria-hidden="true"></i>
                     {% else %}
-                        <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <a href="{{ site.baseurl }}/{{ navitem.href }}">{{ navitem.title }}</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
                     {% endif %}
                 {% endif %}
                 <ul>
                     {% for category in navitem.categories %}
 
-                    <li><a href="{{ site.baseurl }}/documentation/{{ category.href }}">{{ category.title }}</a></li>
+                    <li><a href="{{ site.baseurl }}/{{ category.href }}">{{ category.title }}</a></li>
 
                     {% endfor %}
                 </ul>
@@ -45,7 +41,7 @@ layout: default
                     {% if navitem.title == "API Documentation" %}
                         <a href="{{ navitem.href }}">{{ navitem.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     {% else %}
-                        <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}</a>
+                        <a href="{{ site.baseurl }}/{{ navitem.href }}">{{ navitem.title }}</a>
                     {% endif %}
                 {% endif %}
             </li>

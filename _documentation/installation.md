@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Installation
-permalink: /documentation/installation/
+permalink: /installation/
 ---
 
 To develop Caleydo Web applications, you can use a container repository that includes a Vagrant VM.

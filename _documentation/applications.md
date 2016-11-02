@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Plugins
-permalink: /documentation/applications/
+permalink: /applications/
 ---
 
 {% include todo.html %}

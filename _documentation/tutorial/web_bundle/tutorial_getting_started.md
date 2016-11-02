@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Web Bundle Tutorial
-permalink: /documentation/tutorial/web_bundle/
+permalink: /tutorial/web_bundle/
 ---
 
 (This example is also available at

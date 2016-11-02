@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Architecture
-permalink: /documentation/architecture/
+permalink: /architecture/
 ---
 
 In Caleydo Web, all components are [plugins](../plugin_mechanism). The client is realized in TypeScript and JavaScript using HTML5, while the server is implemented in Python and uses the [Flask](http://flask.pocoo.org/) framework. Client and server communicate via REST and Websocket interfaces. 
