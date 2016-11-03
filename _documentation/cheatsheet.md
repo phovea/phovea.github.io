@@ -8,7 +8,7 @@ Prerequisite: Install Phovea generator
 --------------------------------------
 
 ```
-sudo npm install -g yo gitbub:phovea/generator-phovea
+sudo npm install -g yo github:phovea/generator-phovea
 ```
 
 Initialize a new Phovea plugin
@@ -35,7 +35,7 @@ Update project template
 to get latest project updates and bugfixes
 
 ```
-npm install -g gitbub:phovea/generator-phovea
+npm install -g github:phovea/generator-phovea
 cd name_of_plugin
 yo phovea:update
 ```
