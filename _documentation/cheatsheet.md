@@ -29,6 +29,17 @@ npm install
 npm run start
 ```
 
+Update project template
+-----------------------
+
+to get latest project updates and bugfixes
+
+```
+npm install -g gitbub:phovea/generator-phovea
+cd name_of_plugin
+yo phovea:update
+```
+
 Use an ueber context
 --------------------
 
@@ -44,28 +55,43 @@ npm install
 vagrant up
 ```
 
-Ueber Related: Launch a Phovea application/service
---------------------------------------------------
+### Launch a Phovea application/service
 
 ```
 npm run start:name_of_application
 ```
 
-
-Ueber Related: Clone an existing Phovea plugin
-----------------------------------------------
+### Clone an existing Phovea plugin
 
 ```
 cd ueber_directory
 yo phovea:clone
 ```
 
-Ueber Related: Resolve dependencies of plugin
----------------------------------------------
+### Resolve dependencies of plugin
 
 i.e., clone the plugins dependencies into the ueber context
 
 ```
 cd ueber_directory
 yo phovea:resolve
+```
+
+### For Each
+
+e.g., pull all git repos
+
+```
+cd ueber_directory
+./forEach git pull
+```
+
+Migration
+---------
+
+The wizard guides you through the different steps for migrating a Caleydo plugin to Phovea
+
+```
+cd some_directory
+yo phovea:migrate-wizard
 ```
