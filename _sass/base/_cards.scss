@@ -87,14 +87,6 @@
     }    
   }
 
-  .card-header-project {
-    @include card-header($project-color);
-  }
-
-  .card-header-funding {
-    @include card-header($neutral-color);
-  }
-
   .card-header {
     @include card-header($neutral-color);
   }
