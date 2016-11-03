@@ -4,6 +4,10 @@ layout: default
 
 <div class="documentation">
 
+    <header class="welcome-title"><!-- TODO: Class should depend on collection. -->
+        <h1>{{ page.title }}</h1>
+    </header>
+
     <article class="docs-content-aside">
 
         <ul>
@@ -53,7 +57,6 @@ layout: default
 
 
     <article class="docs-content-main">
-        <h1>{{ page.title | remove: "| Caleydo" }}</h1>
         {{ content }}
     </article>
 
