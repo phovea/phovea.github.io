@@ -27,8 +27,15 @@ permalink: pretty
 sass:
   sass_dir: _sass
 exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env"]
-include: ['_documentation']
 
 collections:
   institutions:
     output: false
+  welcome:
+    output: true
+  tutorials:
+    output: true
+  developers:
+    output: true
+  reference:
+    output: true
