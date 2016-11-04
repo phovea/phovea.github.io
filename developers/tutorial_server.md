@@ -1,7 +1,6 @@
 ---
 layout: documentation
 title:  Server Tutorial
-permalink: /tutorial/server/
 ---
 
 {% highlight bash  %}

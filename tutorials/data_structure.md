@@ -10,7 +10,7 @@ Caleydo Web supports simple loading and handling of various data. It provides da
 
 ## Loading Datasets
 
-The way data is accessed in Caleydo Web can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different [plugins](../plugin_mechanism) and concrete implementations of data structure interfaces how the data is accessed.
+The way data is accessed in Caleydo Web can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different [plugins](/developers/plugins/) and concrete implementations of data structure interfaces how the data is accessed.
 
 ### Dataset Parsing
 

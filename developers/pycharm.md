@@ -1,7 +1,6 @@
 ---
 layout: documentation
 title:  Setting up PyCharm
-permalink: /pycharm/
 ---
 
 There are three approaches to developing Caleydo in PyCharm:
