@@ -11,9 +11,10 @@ layout: default
     <article class="docs-content-aside">
         <!-- I tried assignment first, but the result isn't actually a string:
              it looks right, but the size is only two. Weird. -->
-        {% capture dir %}{{ page.url | split: "/" | second }}{% endcapture %}
+        {% capture dir %}{% assign path = page.url | split: "/" %}{{ path[1] }}{% endcapture %}
         {% assign other_pages = site.pages | sort: "order" %}
         <ul>
+            <!-- Ditto: assigning other_dir didn't work right. -->
             {% for other_page in other_pages %}
                 {% capture other_dir %}{{ other_page.path | split: "/" | first }}{% endcapture %}
                 {% if other_dir == dir %}{% if other_page.title.size > 0 %}
