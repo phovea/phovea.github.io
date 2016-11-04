@@ -60,7 +60,7 @@ Note that the dependencies are specified in a way that is compatible with [bower
 
 Every plug-in is described by the following entries:
 
-{% highlight typescript %}
+```typescript
 export interface IPluginDesc {
   /**
    * type of plug-in, a name by convention for identifying different plug-in types
@@ -95,7 +95,7 @@ export interface IPluginDesc {
    */
   description: string;
 }
-{% endhighlight %}
+```
 
 Different plugin types may also define additional entries.
 Every plug-in has to have an entry method for creating the plug-in related content. Multiple plug-ins are possible per file by specifying different factory methods.
