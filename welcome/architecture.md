@@ -1,0 +1,9 @@
+---
+layout: documentation
+title:  Architecture
+---
+
+In Caleydo Web, all components are [plugins](/developers/plugins/). The client is realized in TypeScript and JavaScript using HTML5, while the server is implemented in Python and uses the [Flask](http://flask.pocoo.org/) framework. Client and server communicate via REST and Websocket interfaces. 
+
+This documentation has two components: [Tutorials](/tutorials/), where we demonstrate how to build increasingly complex applications using a mix of all components, and the Reference (todo), where we explain the core components in detail.
+

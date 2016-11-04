@@ -1,7 +1,6 @@
 ---
 layout: documentation
 title:  Frameworks
-permalink: /frameworks/
 ---
 
 ## Client Frameworks

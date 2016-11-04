@@ -1,7 +1,6 @@
 ---
 layout: documentation
 title:  Project Description
-permalink: /project_description/
 ---
 
 {% include todo.html %}

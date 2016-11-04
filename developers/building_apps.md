@@ -1,7 +1,6 @@
 ---
 layout: documentation
 title:  Building Applications
-permalink: /building_apps/
 ---
 
 grunt task: `grunt build [--application=<application>] [--context=<context>]`

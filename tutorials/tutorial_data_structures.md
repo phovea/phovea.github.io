@@ -1,7 +1,7 @@
 ---
 layout: documentation
-title:  Data Structures Tutorial
-permalink: /tutorial/data_structures/
+title:  Data Structures
+order: 2
 ---
 
 
