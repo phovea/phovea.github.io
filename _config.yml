@@ -31,11 +31,3 @@ exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile
 collections:
   institutions:
     output: false
-  welcome:
-    output: true
-  tutorials:
-    output: true
-  developers:
-    output: true
-  reference:
-    output: true
