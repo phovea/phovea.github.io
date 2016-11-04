@@ -5,6 +5,8 @@ use_analytics: true
 
 # Build settings
 
+permalink: pretty
+
 sass:
   sass_dir: _sass
 exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env"]
