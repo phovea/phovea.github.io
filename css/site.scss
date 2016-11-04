@@ -121,7 +121,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 
 .logo {
   float: left;
-  margin-left: -34px;
+  margin-left: -44px;
 
   @include media($small-display) {
     padding-top: 5px; 
