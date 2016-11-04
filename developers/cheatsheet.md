@@ -1,7 +1,6 @@
 ---
 layout: documentation
 title:  Cheatsheet
-permalink: /cheatsheet/
 ---
 
 Prerequisite: Install Phovea generator
@@ -43,8 +42,10 @@ yo phovea:update
 Use an ueber context
 --------------------
 
-An ueber context helps you developing multiple plugins at the same time and working with server side plugins using [Vagrant](https://www.vagrantup.com). 
-The basic idea is to use the parent directory of the plugins, share a common npm installation and vagrant setup
+An ueber context helps if you are developing multiple plugins at the same time 
+and working with server side plugins using [Vagrant](https://www.vagrantup.com). 
+The basic idea is to use the parent directory of the plugins, so that they can
+share a common npm installation and vagrant setup.
 
 ```
 mkdir ueber_directory
@@ -89,7 +90,7 @@ cd ueber_directory
 Migration
 ---------
 
-The wizard guides you through the different steps for migrating a Caleydo plugin to Phovea
+The wizard guides you through the different steps for migrating a Caleydo plugin to Phovea.
 
 ```
 cd some_directory
