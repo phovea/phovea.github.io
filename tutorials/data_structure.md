@@ -1,8 +1,10 @@
 ---
 layout: documentation
-title: Data Structure
-permalink: /data_structure/
+title: Data Structures TODO
+order: 3
 ---
+
+TODO: If this is still useful, let's get some live examples.
 
 Caleydo Web supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/Caleydo/caleydo_core).
 
