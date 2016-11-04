@@ -1,14 +1,8 @@
 ---
 layout: documentation
 title: Welcome
-weight: 2
-tag: documentation
-permalink: /
 ---
 
-Caleydo Web is a platform for developing web-based visualization applications. Caleydo provides sophisticated infrastructure for **managing data**, **syncrhonizing views**, **tracking history**, etc. Caleydo Web comes in two flavors: 
-
- * a lightweight client library
- * a full client-server system
+Phovea is a framework for developing web-based, biomedical data visualization applications. Phovea provides sophisticated infrastructure for **managing data**, **synchronizing views**, **tracking history**, etc. Phovea can be used both as a collection of client and server components for *integration into existing systems* or as a full client-server system to create *standalone Phovea applications*.
  
-[Explore existing applications built with the Caleydo Web platform.](http://demo.caleydo.org)
+[Explore existing applications built with Phovea platform.](http://demo.caleydo.org)

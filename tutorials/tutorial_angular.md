@@ -1,7 +1,7 @@
 ---
 layout: documentation
-title:  Integrate with Angular Tutorial
-permalink: /tutorial/angular/
+title:  Integrate with Angular
+order: 5
 ---
 
 (This example is also available at

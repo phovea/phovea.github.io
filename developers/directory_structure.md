@@ -1,8 +1,6 @@
 ---
 layout: documentation
 title:  Caleydo Directory Structure
-permalink: /directory_structure/
-description: Explains the basic directory structure
 ---
 
 After the installation you find the following basic directory structure:

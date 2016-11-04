@@ -4,56 +4,31 @@ layout: default
 
 <div class="documentation">
 
+    {% capture dir %}{% assign path = page.url | split: "/" %}{{ path[1] }}{% endcapture %}
+    {% if dir.size == 0 %}
+        {% assign dir = "welcome" %}
+    {% endif %}
+
+    <header class="{{ dir }}-title"><!-- TODO: Class should depend on collection. -->
+        <h1>{{ page.title }}</h1>
+    </header>
+
     <article class="docs-content-aside">
-
+        <!-- I tried assignment first, but the result isn't actually a string:
+             it looks right, but the size is only two. Weird. -->
+        {% assign other_pages = site.pages | sort: "order" %}
         <ul>
-            {% for navitem in site.data.docu_nav %}
-            {% if navitem.categories != null %}
-
-            <li>
-                {% if navitem.href == null %}
-                    {{ navitem.title }}
-
-                {% else %}
-                    {% if navitem.title == "API Documentation" %}
-                        <a href="{{ navitem.href }}">{{ navitem.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
-     <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    {% else %}
-                        <a href="{{ site.baseurl }}/{{ navitem.href }}">{{ navitem.title }}</a> <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    {% endif %}
-                {% endif %}
-                <ul>
-                    {% for category in navitem.categories %}
-
-                    <li><a href="{{ site.baseurl }}/{{ category.href }}">{{ category.title }}</a></li>
-
-                    {% endfor %}
-                </ul>
-            </li>
-
-            {% else %}
-
-            <li>
-                {% if navitem.href == null %}
-                    {{ navitem.title }}
-
-                {% else %}
-                    {% if navitem.title == "API Documentation" %}
-                        <a href="{{ navitem.href }}">{{ navitem.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
-                    {% else %}
-                        <a href="{{ site.baseurl }}/{{ navitem.href }}">{{ navitem.title }}</a>
-                    {% endif %}
-                {% endif %}
-            </li>
-
-            {% endif %}
+            <!-- Ditto: assigning other_dir didn't work right. -->
+            {% for other_page in other_pages %}
+                {% capture other_dir %}{{ other_page.path | split: "/" | first }}{% endcapture %}
+                {% if other_dir == dir %}{% if other_page.title.size > 0 %}
+                    <li><a href="{{ other_page.url }}">{{ other_page.title }}</a></li>
+                {% endif %}{% endif %}
             {% endfor %}
         </ul>
     </article>
 
-
     <article class="docs-content-main">
-        <h1>{{ page.title | remove: "| Caleydo" }}</h1>
         {{ content }}
     </article>
 

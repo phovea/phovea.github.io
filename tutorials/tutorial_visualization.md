@@ -1,7 +1,7 @@
 ---
 layout: documentation
-title:  Visualization Tutorial
-permalink: /tutorial/visualization/
+title:  Visualization
+order: 4
 ---
 
 
