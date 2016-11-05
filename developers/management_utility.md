@@ -20,9 +20,9 @@ e.g.
 
 
 ```bash
-./manage.sh clone caleydo_core
-./manage.sh clone Caleydo/caleydo_vis
-./manage.sh clone https://github.com/Caleydo/caleydo_sample_app.git
+./manage.sh clone phovea_core
+./manage.sh clone Phovea/phovea_vis
+./manage.sh clone https://github.com/phovea/phovea_sample_app.git
 ```
 
 ### *clone_deps* / *clone_ssh_deps* command
@@ -33,7 +33,7 @@ usage:
 
 
 ```bash
-./manage.sh clone_deps caleydo_sample_app
+./manage.sh clone_deps phovea_sample_app
 ```
 
 ### *pull* command
@@ -57,11 +57,11 @@ Currently, following external dependency types are supported:
 ### *init* command
 
 You can use the `./manage.sh init` to add a new plugin as a starting point for development to the web container.
-The command clones a [sample app](https://github.com/Caleydo/sample_app) into a new directoy within the */plugin* directory.
+The command clones a [sample app](https://github.com/phovea/sample_app) into a new directoy within the */plugin* directory.
 The `init` command currently asks you to specify the following settings:
 
 * `Enter the plugin name:` - The name of the directory within the */plugin* directory and should only contain lower-case characters, underscore and dashes
-* `name: (caleydo_template_client_plugin)` - The name of your new plugin, as specified in package.json; should be the same name as the previous entered plugin name
+* `name: (phovea_template_client_plugin)` - The name of your new plugin, as specified in package.json; should be the same name as the previous entered plugin name
 * `version (0.0.1)` - The initial version of your plugin, as specified in package.json
 * `keywords` - comma-seperated list of keywords, as specified in package.json
 * `author` - as specified in package.json
@@ -69,7 +69,7 @@ The `init` command currently asks you to specify the following settings:
 
 ### *publish* command
 
-The `publish` command publishes a plugin to the caleydo registry
+The `publish` command publishes a plugin to the phovea registry
 
 usage:
 
@@ -78,7 +78,7 @@ usage:
 ./manage.sh publish <plugin name>
 ```
 
-Before the first usage you have to enter the credentials for the caleydo registry, i.e. the nexus registry
+Before the first usage you have to enter the credentials for the phovea registry, i.e. the nexus registry
 
 
 ```bash
@@ -88,12 +88,12 @@ npm adduser
 
 ### *compile*, *build*, *server*, *server_js*, *dev* commands
 
-builds or build and runs Caleydo Web. [Grunt](http://gruntjs.com) is used as build tool and this command redirects to it.
+builds or build and runs Phovea. [Grunt](http://gruntjs.com) is used as build tool and this command redirects to it.
 
-The `dev` command first compiles Caleydo Web and then watches for changes. No server will be started
+The `dev` command first compiles Phovea and then watches for changes. No server will be started
 
 
 ### *install*, *list*, *explore*, *search*, ... commands
 
-all other commands are redirected to a configured [npm](http://npmjs.org/) instance. The configuration includes using the caleydo repository.
+all other commands are redirected to a configured [npm](http://npmjs.org/) instance. The configuration includes using the phovea repository.
 If you wanna install plugins outside of the virtual machine, ensure that you installed npm.

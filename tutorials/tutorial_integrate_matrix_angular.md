@@ -6,12 +6,12 @@ order: 6
 
 > **WARNING**: This tutorial is still in beta. The following doesn't work yet:
 >
-> - Single cell selections are not linked due to ambiguous selection. (See [#141](https://github.com/Caleydo/caleydo_web_container/issues/141#issuecomment-187878355))
-> - Caleydo's single cell selection API `.selectProduct()` does not work as intended. (See [#141](https://github.com/Caleydo/caleydo_web_container/issues/141#issuecomment-187409616))
+> - Single cell selections are not linked due to ambiguous selection. (See [#141](https://github.com/phovea/phovea_web_container/issues/141#issuecomment-187878355))
+> - Phovea's single cell selection API `.selectProduct()` does not work as intended. (See [#141](https://github.com/phovea/phovea_web_container/issues/141#issuecomment-187409616))
 > - Cells selected in the heat-map visualizations can't be completely deselected by the user.
-> - Lodash shouldn't be needed. (See issue [#144](https://github.com/Caleydo/caleydo_web_container/issues/144))
+> - Lodash shouldn't be needed. (See issue [#144](https://github.com/phovea/phovea_web_container/issues/144))
 
-This example demonstrates how to integrate the matrix-based heat-map visualization into an Angular application. This tutorial illustrates the integration through an Angular-based table representation of the matrix' data and Caleydo's heat-map visualization.
+This example demonstrates how to integrate the matrix-based heat-map visualization into an Angular application. This tutorial illustrates the integration through an Angular-based table representation of the matrix' data and Phovea's heat-map visualization.
 
 ### The final app and usage
 
@@ -51,7 +51,7 @@ In order to make Angular's table visualization a bit more interesting, a StampIt
 
 Using Angular's build-in two-way data binding we can make the table editable and automatically updateable by binding an _input_ field to the appropriate matrix cell.
 
-Caleydo's heat-map is linked to the Angular app via custom events emitted by Angular's matrix and matrix selection, and Caleydo's matrix implementation.
+Phovea's heat-map is linked to the Angular app via custom events emitted by Angular's matrix and matrix selection, and Phovea's matrix implementation.
 
 Finally we have to make our JavaScript code available to Angular by registering all components; e.g. third-party libraries, services, factories, controllers and directives.
 

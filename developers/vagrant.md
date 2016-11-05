@@ -15,7 +15,7 @@ Note: Setting up a dev environment requires a working installation of Git!
 - Clone this repository
 
 ```bash
- git clone https://github.com/Caleydo/caleydo_web_container.git
+ git clone https://github.com/phovea/phovea_web_container.git
 ```
 
 - Launch a (bash) shell
@@ -25,7 +25,7 @@ Note: Setting up a dev environment requires a working installation of Git!
 - Switch to the new directory
 
 ```bash
- cd caleydo_web_container
+ cd phovea_web_container
 ```
 
 - Let Vagrant create the environment for you
@@ -42,7 +42,7 @@ Note: Setting up a dev environment requires a working installation of Git!
  vagrant ssh
 ```
 
-- Navigate to caleydo directory
+- Navigate to phovea directory
 
 ```bash
  cd /vagrant

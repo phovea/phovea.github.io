@@ -5,7 +5,7 @@ order: 1
 ---
 
 (This example is also available at
-[jsfiddle](http://jsfiddle.net/gh/get/library/pure/caleydo/caleydo.github.io/tree/master/_documentation/tutorial/web_bundle/demo_getting_started/jsfiddle).)
+[jsfiddle](http://jsfiddle.net/gh/get/library/pure/phovea/phovea.github.io/tree/master/tutorials/demo_getting_started/jsfiddle).)
 
 Let's start with something simple:
 

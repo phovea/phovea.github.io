@@ -13,9 +13,9 @@ The [package.json](https://www.npmjs.org/doc/files/package.json.html) is the one
 {
   "name" : "...",
   "peerDependencies" : {
-    "caleydo_core": "*"
+    "phovea_core": "*"
   },
-  "caleydo" : {
+  "phovea" : {
     "plugins" : {
       "web" : [{
         "type": "app",
@@ -37,21 +37,21 @@ The [package.json](https://www.npmjs.org/doc/files/package.json.html) is the one
     }
   },
   "publishConfig": {
-    "registry": "http://registry.caleydo.org/"
+    "registry": "http://registry.phovea.org/"
   }
 }
 {% endhighlight %}
 
 There are several sections in package.json:
 
-* **peerDependencies:** All dependencies within caleydo web, i.e., caleydo-web modules.
-* **caleydo:** Several caleydo-web specific declarations.
-* **caleydo.plugins:** Plugins specified for this module. Separated into "web" and "python" plugins.
-* **caleydo.plugins.web:** List of client-side (JavaScript/TypeScript) plugin descriptions for this module.
-* **caleydo.plugins.python:** List of server-side (Python) plugin descriptions for this module.
-* **caleydo.dependencies:** External dependencies of this module. Separated into "web" and "python".
-* **caleydo.dependencies.web:** List of client-side dependencies.
-* **caleydo.dependencies.python:** List of server-side dependencies.
+* **peerDependencies:** All dependencies within phovea web, i.e., phovea-web modules.
+* **phovea:** Several phovea-web specific declarations.
+* **phovea.plugins:** Plugins specified for this module. Separated into "web" and "python" plugins.
+* **phovea.plugins.web:** List of client-side (JavaScript/TypeScript) plugin descriptions for this module.
+* **phovea.plugins.python:** List of server-side (Python) plugin descriptions for this module.
+* **phovea.dependencies:** External dependencies of this module. Separated into "web" and "python".
+* **phovea.dependencies.web:** List of client-side dependencies.
+* **phovea.dependencies.python:** List of server-side dependencies.
 * **publishConfig:** Specifies where this module is published.
 
 Note that the dependencies are specified in a way that is compatible with [bower.io](http://bower.io).
@@ -100,11 +100,11 @@ export interface IPluginDesc {
 Different plugin types may also define additional entries.
 Every plug-in has to have an entry method for creating the plug-in related content. Multiple plug-ins are possible per file by specifying different factory methods.
 
-Multiple plugin types are available in Caleydo web and user-defined types may be added.
+Multiple plugin types are available in Phovea and user-defined types may be added.
 
 ### Application Plugin
 
-Defines a client-side application plugin. Use this to setup a web application that uses caleydo-web.
+Defines a client-side application plugin. Use this to setup a web application that uses phovea-web.
 
 _Plugin Definition:_
 
@@ -125,7 +125,7 @@ _index.html_
 <html>
 <head>
     <title>Sample App</title>
-    <script src="/caleydo_web.js"></script>
+    <script src="/phovea_web.js"></script>
 </head>
 <body>
 ...
@@ -138,16 +138,16 @@ By default main.js is assumed to be the primary script file and is attempted to 
 _main.js_
 
 {% highlight javascript %}
-define(['d3', '../caleydo_core/main'], function (d3, C) {
+define(['d3', '../phovea_core/main'], function (d3, C) {
   //Your application code
 });
 {% endhighlight %}
 
 If your application script has a different name, e.g., "app.js", just change the script definition to
-`"<script src="/caleydo_web.js?app=./app"></script>"`.
+`"<script src="/phovea_web.js?app=./app"></script>"`.
 
 
-For an example application plugin, see [sample_app](https://github.com/Caleydo/sample_app).
+For an example application plugin, see [sample_app](https://github.com/phovea/sample_app).
 
 
 ### Visualization Plugin
@@ -176,7 +176,7 @@ You can specify a range of additional attributes for visualituation plugins:
 * **sizeDependsOnDataDimension**: Indicates, whether the size of this visulization depends on the dimensions of the data, e.g., the rows and columns of a table. Values may be set for width and height using an array: ``[true, false]`` A single value may be specified to set both.
 * **scaling**: Specifies the scaling behavior. The following values are supported: *free* (no restrictions, default), *aspect* (the initial aspect ratio must be kept, i.e. same scaling values in both dimensions), *width-only* (only width can be scaled), *height-only* (only height can be scaled)
 
-For an example plugin, see [caleydo_sample_vis](https://github.com/Caleydo/caleydo_sample_vis).
+For an example plugin, see [phovea_sample_vis](https://github.com/Caleydo/phovea_sample_vis).
 
 
 #### Datatype Plugin

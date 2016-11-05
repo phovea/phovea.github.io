@@ -3,7 +3,7 @@ layout: documentation
 title:  Registry
 ---
 
-registry.caleydo.org ... published compiled plugins with a specific version
+registry.phovea.org ... published compiled plugins with a specific version
 
 building ... main challenge ... TypeScript dependencies, e.g. if parts of the core are used you need it for compilation in the same directory structure (neighboring) 
 
@@ -28,9 +28,9 @@ notation:
 }
 ```
 
-how to query? two modules in the client and server using the same API: `plugin.list(<plugintype|filter function>)` see details: https://github.com/Caleydo/caleydo_core/blob/master/plugin.ts
+how to query? two modules in the client and server using the same API: `plugin.list(<plugintype|filter function>)` see details: https://github.com/phovea/phovea_core/blob/master/plugin.ts
 
 ## Registry resolution
 
-Now the list of loaded plugins is determined during **build** time. All the available `package.json` files are parsed and two files generated: `registry.json` and `caleydo_launcher.js`. The former one is used by the server. The latter initializes the client core and launches the JS main app. This ensures that the core is initialized before all other components depending on it. In addition, a file called `caleydo_web.js` is generated that is a simple wrapper hiding the internal requirejs initialization. 
+Now the list of loaded plugins is determined during **build** time. All the available `package.json` files are parsed and two files generated: `registry.json` and `phovea_launcher.js`. The former one is used by the server. The latter initializes the client core and launches the JS main app. This ensures that the core is initialized before all other components depending on it. In addition, a file called `phovea_web.js` is generated that is a simple wrapper hiding the internal requirejs initialization. 
 

@@ -3,7 +3,7 @@ layout: documentation
 title:  Plugins
 ---
 
-Caleydo Web components are found on [GitHub](https://github.com/Caleydo). To facilitate installation of Caleydo Web, a [container repository](https://github.com/Caleydo/caleydo_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 
+Phovea components are found on [GitHub](https://github.com/phovea). To facilitate installation of Phovea, a [container repository](https://github.com/phovea/phovea_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 
 
 * lazy loaded plugins, load them upon first need <br>
    -> implications: need way to describe plugins -> registry
@@ -12,7 +12,7 @@ Caleydo Web components are found on [GitHub](https://github.com/Caleydo). To fac
 * several abstraction layers <br>
    -> e.g. dataset is wrapped into an API with common interface
 
-The container repository includes a shell script file *manage.sh*, which helps installing and managing Caleydo Web plugins and their dependencies in the virtual environment. It uses [Bower](http://bower.io/) for resolving web dependencies and [Python pip](https://pypi.python.org/pypi/pip) for python dependencies. [Grunt.js](http://gruntjs.com/) is used for building Caleydo Web and running the web server.
+The container repository includes a shell script file *manage.sh*, which helps installing and managing Phovea plugins and their dependencies in the virtual environment. It uses [Bower](http://bower.io/) for resolving web dependencies and [Python pip](https://pypi.python.org/pypi/pip) for python dependencies. [Grunt.js](http://gruntjs.com/) is used for building Phovea and running the web server.
 
 ## JavaScript ES6 Promise
 
@@ -54,7 +54,7 @@ Promise.resolve(value) // wrap the value as a resolved promise
 Project.reject(error) // wraps the error as rejected promise
 ```
 
-usage in Caleydo Web: where possible in favor of callbacks, e.g. `ajax.getJSON(url)`, `matrix.data()`, `plugins.list(matrix)`, ...
+usage in Phovea: where possible in favor of callbacks, e.g. `ajax.getJSON(url)`, `matrix.data()`, `plugins.list(matrix)`, ...
 
 Tutorial on promises:
 [JavaScript Promises: There and back again](http://html5rocks.com/en/tutorials/es6/promises)

@@ -6,11 +6,11 @@ order: 3
 
 TODO: If this is still useful, let's get some live examples.
 
-Caleydo Web supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/Caleydo/caleydo_core).
+Phovea supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/phovea/phovea_core).
 
 ## Loading Datasets
 
-The way data is accessed in Caleydo Web can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different [plugins](/developers/plugins/) and concrete implementations of data structure interfaces how the data is accessed.
+The way data is accessed in Phovea can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different [plugins](/developers/plugins/) and concrete implementations of data structure interfaces how the data is accessed.
 
 ### Dataset Parsing
 
@@ -46,19 +46,19 @@ The following properties are common to all supported dataset types:
 * `size` The size of the dataset. In case of a matrix, number of rows and columns.
 * `separator`: String that is used as separator in the data file. Default: ",".
 
-An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [caleydo_sample_app](https://github.com/Caleydo/caleydo_sample_app).
+An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [phovea_sample_app](https://github.com/phovea/phovea_sample_app).
 
 ### Dataset Access
 
-There are two basic ways to access the data files from the client code. The first way is the **get** method specified in `caleydo_core/data`. It takes the dataset id specified in the dataset defininition as parameter and returns a promise for an associated data structure object (Matrix, Table, Vector, Stratification). Note that this method involves code from the server side of Caleydo Web and thus will not work with the lightweight client library version.
+There are two basic ways to access the data files from the client code. The first way is the **get** method specified in `phovea_core/data`. It takes the dataset id specified in the dataset defininition as parameter and returns a promise for an associated data structure object (Matrix, Table, Vector, Stratification). Note that this method involves code from the server side of Phovea and thus will not work with the lightweight client library version.
 
-The second way is the **parseRemoteMatrix** method specified in `caleydo_d3/parser`. It takes the dataset file path as argument and returns a promise for an associated data structure object. In this case, the `index.json` file must be located in the same directory as the dataset file. This method will also work for the client library version of Caleydo Web.
+The second way is the **parseRemoteMatrix** method specified in `phovea_d3/parser`. It takes the dataset file path as argument and returns a promise for an associated data structure object. In this case, the `index.json` file must be located in the same directory as the dataset file. This method will also work for the client library version of Phovea.
 
-Another way to access datasets is to use the **list** method from `caleydo_core/data`. This method looks for dataset definitions in all Caleydo Web plugins. All found datasets are accessible via a promise to an array of datastructure objects. This method will not work in the client library version.
+Another way to access datasets is to use the **list** method from `phovea_core/data`. This method looks for dataset definitions in all Phovea plugins. All found datasets are accessible via a promise to an array of datastructure objects. This method will not work in the client library version.
 
 ## Data Structures
 
-All data structures are part of the [core plugin](https://github.com/Caleydo/caleydo_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*. 
+All data structures are part of the [core plugin](https://github.com/phovea/phovea_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*. 
 
 ### Matrix
 
@@ -102,7 +102,7 @@ Consider the following properties for a matrix definition:
 
 #### Usage
 
-Caleydo Web matrices implement the [IMatrix](http://data.caleydo.org/builds/lib/docs/interfaces/_caleydo_core_matrix_.imatrix.html) interface, which can be extended to provide custom matrix implementations. Important attributes include:
+Phovea matrices implement the [IMatrix](http://data.caleydo.org/builds/lib/docs/interfaces/_caleydo_core_matrix_.imatrix.html) interface, which can be extended to provide custom matrix implementations. Important attributes include:
 
 * `rowtype` IDType (todo) for the matrix rows.
 * `coltype` IDType (todo) for the matrix columns.
@@ -202,7 +202,7 @@ Have a look at the following properties of a table definition:
 
 #### Usage
 
-Tables in Caleydo Web are implementations of the [ITable](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_table_.itable.html) interface. An attribute worth mentioning is the `rowtype`, which specifies the id type of the rows. Many methods of the table such as `data(range)`´, `rows(range)`, or `view(range)` work similar to the matrix methods, using ranges as parameters and promises for return values. The main difference is how columns are handled: `cols(range)` returns a promise to an array of [vector](#vector) objects, one vector for each column. Here is a usage example:
+Tables in Phovea are implementations of the [ITable](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_table_.itable.html) interface. An attribute worth mentioning is the `rowtype`, which specifies the id type of the rows. Many methods of the table such as `data(range)`´, `rows(range)`, or `view(range)` work similar to the matrix methods, using ranges as parameters and promises for return values. The main difference is how columns are handled: `cols(range)` returns a promise to an array of [vector](#vector) objects, one vector for each column. Here is a usage example:
 
 ```javascript
 
@@ -344,7 +344,7 @@ server side principles
 
  * datastores
 
-   datastores are plugins that support different types of storage. current ones https://github.com/Caleydo/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/Caleydo/caleydo_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets. 
+   datastores are plugins that support different types of storage. current ones https://github.com/phovea/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/phovea/phovea_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets. 
 
  * numpy
    

@@ -6,9 +6,9 @@ order: 2
 
 
 (This example is also available at
-[jsfiddle](http://jsfiddle.net/gh/get/library/pure/caleydo/caleydo.github.io/tree/master/_documentation/tutorial/web_bundle/demo_data_structures/jsfiddle).)
+[jsfiddle](http://jsfiddle.net/gh/get/library/pure/phovea/phovea.github.io/tree/master/tutorials/demo_data_structures/jsfiddle).)
 
-Ranges in Caleydo can be used to subset your data and zoom in on regions of interest.
+Ranges in Phovea can be used to subset your data and zoom in on regions of interest.
 
 ```javascript
 {% include_relative demo_data_structures/demo_5.js %}
