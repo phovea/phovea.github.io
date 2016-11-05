@@ -6,7 +6,7 @@ order: 4
 
 
 (This example is also available at
-[jsfiddle](http://jsfiddle.net/gh/get/library/pure/caleydo/caleydo.github.io/tree/master/_documentation/tutorial/web_bundle/demo_visualization/jsfiddle).)
+[jsfiddle](http://jsfiddle.net/gh/get/library/pure/phovea/phovea.github.io/tree/master/tutorials/demo_visualization/jsfiddle).)
 
 The Caleydo project emphasizes modularity. This means you can create plugins to add
 a range of capabilities, but it also means it can be hard to know where to begin.
