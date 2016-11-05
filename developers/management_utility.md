@@ -21,8 +21,8 @@ e.g.
 
 ```bash
 ./manage.sh clone caleydo_core
-./manage.sh clone Caleydo/caleydo_vis
-./manage.sh clone https://github.com/Caleydo/caleydo_sample_app.git
+./manage.sh clone Phovea/caleydo_vis
+./manage.sh clone https://github.com/Phovea/caleydo_sample_app.git
 ```
 
 ### *clone_deps* / *clone_ssh_deps* command
@@ -57,7 +57,7 @@ Currently, following external dependency types are supported:
 ### *init* command
 
 You can use the `./manage.sh init` to add a new plugin as a starting point for development to the web container.
-The command clones a [sample app](https://github.com/Caleydo/sample_app) into a new directoy within the */plugin* directory.
+The command clones a [sample app](https://github.com/Phovea/sample_app) into a new directoy within the */plugin* directory.
 The `init` command currently asks you to specify the following settings:
 
 * `Enter the plugin name:` - The name of the directory within the */plugin* directory and should only contain lower-case characters, underscore and dashes
@@ -88,9 +88,9 @@ npm adduser
 
 ### *compile*, *build*, *server*, *server_js*, *dev* commands
 
-builds or build and runs Caleydo Web. [Grunt](http://gruntjs.com) is used as build tool and this command redirects to it.
+builds or build and runs Phovea. [Grunt](http://gruntjs.com) is used as build tool and this command redirects to it.
 
-The `dev` command first compiles Caleydo Web and then watches for changes. No server will be started
+The `dev` command first compiles Phovea and then watches for changes. No server will be started
 
 
 ### *install*, *list*, *explore*, *search*, ... commands

@@ -15,7 +15,7 @@ the backing data is updated, which we render as JSON.
 ```
 <iframe src="../frame_angular_bad.html?demo_angular/demo_7" height="200"></iframe>
 
-What would it take to integrate this with Caleydo, so that we'd have a
+What would it take to integrate this with Phovea, so that we'd have a
 heatmap visualization update as you make edits?
 
 ```javascript
@@ -23,7 +23,7 @@ heatmap visualization update as you make edits?
 ```
 <iframe src="../frame_angular_bad.html?demo_angular/demo_8" height="250"></iframe>
 
-We could just paste in the Caleydo code and watch for changes, but there
+We could just paste in the Phovea code and watch for changes, but there
 are a number of problems here:
 
 * If we use `ng-change`, we're missing the point of Angular: We shouldn't 

@@ -15,7 +15,7 @@ Note: Setting up a dev environment requires a working installation of Git!
 - Clone this repository
 
 ```bash
- git clone https://github.com/Caleydo/caleydo_web_container.git
+ git clone https://github.com/Phovea/caleydo_web_container.git
 ```
 
 - Launch a (bash) shell

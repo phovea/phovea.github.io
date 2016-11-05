@@ -17,7 +17,7 @@ title:  Project Description
 * Why should I use calweb ? (and maybe not X or Y)
 * How complicated is it? (Jumpstart example)
 
-## What Caleydo Web can do for you
+## What Phovea can do for you
  * Synchronize your views with linking and brushing.
  * Provides NumPy like data structures.
  * Provides plugin management for larger projects.

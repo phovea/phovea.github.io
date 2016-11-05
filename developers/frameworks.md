@@ -75,7 +75,7 @@ require will scan the code for require call to convert it to the other full form
 
 **Note**: maybe abstracted away soon
 
-Flask is a micro python web framework using annotations for declaring accessible urls. In Caleydo Web the underlying standard WSGI is used as basis with this as default implementation. 
+Flask is a micro python web framework using annotations for declaring accessible urls. In Phovea the underlying standard WSGI is used as basis with this as default implementation. 
 
 usage (*note: untested*)
 

@@ -3,7 +3,7 @@ layout: documentation
 title:  Setting up PyCharm
 ---
 
-There are three approaches to developing Caleydo in PyCharm:
+There are three approaches to developing Phovea in PyCharm:
 
 - Let the Vagrant instance manage Typescript and SCSS recompilation
 - Have PyCharm manage recompilation
@@ -15,7 +15,7 @@ A tighter connection with the IDE is useful, but can also be harder to set up.
 
 - Install [PyCharm](https://www.jetbrains.com/pycharm/)
 - Ask your team for a link for to the license key
-- If you haven't already, [`git clone https://github.com/Caleydo/caleydo_web_container.git`](https://github.com/Caleydo/caleydo_web_container)
+- If you haven't already, [`git clone https://github.com/Phovea/caleydo_web_container.git`](https://github.com/Phovea/caleydo_web_container)
 - "File -> Open..." and select the `caleydo_web_container` directory.
 - Download [settings.jar](/assets/settings.jar)
 - In PyCharm, "File -> Import Settings..." and select "settings.jar"

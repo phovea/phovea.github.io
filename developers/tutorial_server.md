@@ -4,7 +4,7 @@ title:  Server Tutorial
 ---
 
 ```bash
-git clone https://github.com/Caleydo/caleydo_web_container.git
+git clone https://github.com/Phovea/caleydo_web_container.git
 cd caleydo_web_container
 vagrant up
 # Wait and get some coffee. This will take a while.

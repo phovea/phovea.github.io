@@ -100,7 +100,7 @@ export interface IPluginDesc {
 Different plugin types may also define additional entries.
 Every plug-in has to have an entry method for creating the plug-in related content. Multiple plug-ins are possible per file by specifying different factory methods.
 
-Multiple plugin types are available in Caleydo web and user-defined types may be added.
+Multiple plugin types are available in Phovea and user-defined types may be added.
 
 ### Application Plugin
 
@@ -147,7 +147,7 @@ If your application script has a different name, e.g., "app.js", just change the
 `"<script src="/caleydo_web.js?app=./app"></script>"`.
 
 
-For an example application plugin, see [sample_app](https://github.com/Caleydo/sample_app).
+For an example application plugin, see [sample_app](https://github.com/Phovea/sample_app).
 
 
 ### Visualization Plugin

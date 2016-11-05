@@ -3,7 +3,7 @@ layout: documentation
 title:  Docker
 ---
 
-[Docker](http://docker.com/) can be used to bundle Caleydo Web packages into containers. 
+[Docker](http://docker.com/) can be used to bundle Phovea packages into containers. 
 
 ## Build Image
 
