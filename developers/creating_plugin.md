@@ -108,7 +108,7 @@ Defines a client-side application plugin. Use this to setup a web application th
 
 _Plugin Definition:_
 
-```javascript
+{% highlight javascript %}
 {
   "type": "app",
   "name": "Sample App"
@@ -120,7 +120,7 @@ An index.html file must exist.
 
 _index.html_
 
-```html
+{% highlight html %}
 <!doctype html>
 <html>
 <head>
@@ -137,7 +137,7 @@ By default main.js is assumed to be the primary script file and is attempted to 
 
 _main.js_
 
-```javascript
+{% highlight javascript %}
 define(['d3', '../caleydo_core/main'], function (d3, C) {
   //Your application code
 });
@@ -156,7 +156,7 @@ Defines a client-side visualization plugin. Visualization plugins are intended f
 
 _Plugin Definition:_
 
-```javascript
+{% highlight javascript %}
 {
   "type": "vis",
   "name": "Sample Vis",
