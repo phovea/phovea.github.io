@@ -6,7 +6,7 @@ order: 3
 
 TODO: If this is still useful, let's get some live examples.
 
-Phovea supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/Phovea/caleydo_core).
+Phovea supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/phovea/caleydo_core).
 
 ## Loading Datasets
 
@@ -46,7 +46,7 @@ The following properties are common to all supported dataset types:
 * `size` The size of the dataset. In case of a matrix, number of rows and columns.
 * `separator`: String that is used as separator in the data file. Default: ",".
 
-An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [caleydo_sample_app](https://github.com/Phovea/caleydo_sample_app).
+An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [caleydo_sample_app](https://github.com/phovea/caleydo_sample_app).
 
 ### Dataset Access
 
@@ -58,7 +58,7 @@ Another way to access datasets is to use the **list** method from `caleydo_core/
 
 ## Data Structures
 
-All data structures are part of the [core plugin](https://github.com/Phovea/caleydo_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*. 
+All data structures are part of the [core plugin](https://github.com/phovea/caleydo_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*. 
 
 ### Matrix
 
@@ -344,7 +344,7 @@ server side principles
 
  * datastores
 
-   datastores are plugins that support different types of storage. current ones https://github.com/Phovea/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/Phovea/caleydo_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets. 
+   datastores are plugins that support different types of storage. current ones https://github.com/phovea/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/phovea/caleydo_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets. 
 
  * numpy
    

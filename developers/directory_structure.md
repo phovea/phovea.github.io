@@ -23,7 +23,7 @@ caleydo_web_container
 ```
 
 
-* `caleydo_web_container` the cloned [caleydo_web_container repository](https://github.com/Phovea/caleydo_web_container) as root directory
+* `caleydo_web_container` the cloned [caleydo_web_container repository](https://github.com/phovea/caleydo_web_container) as root directory
 * `.tscache` the working directory of the TypeScript compiler
 * `.vagrant` the working directory of [Vagrant](https://www.vagrantup.com/)
 * `_data` shared data directory for all plugins

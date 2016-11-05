@@ -147,7 +147,7 @@ If your application script has a different name, e.g., "app.js", just change the
 `"<script src="/caleydo_web.js?app=./app"></script>"`.
 
 
-For an example application plugin, see [sample_app](https://github.com/Phovea/sample_app).
+For an example application plugin, see [sample_app](https://github.com/phovea/sample_app).
 
 
 ### Visualization Plugin

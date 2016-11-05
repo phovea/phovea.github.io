@@ -28,7 +28,7 @@ notation:
 }
 ```
 
-how to query? two modules in the client and server using the same API: `plugin.list(<plugintype|filter function>)` see details: https://github.com/Phovea/caleydo_core/blob/master/plugin.ts
+how to query? two modules in the client and server using the same API: `plugin.list(<plugintype|filter function>)` see details: https://github.com/phovea/caleydo_core/blob/master/plugin.ts
 
 ## Registry resolution
 
