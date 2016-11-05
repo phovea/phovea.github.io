@@ -29,24 +29,24 @@ Idea: explicitly import other modules ... e.g. similar to import package in Java
 
 Syntax:
 
-{% highlight javascript %}
+```javascript
 define(['exports', '<list of dependency modules names>'], function('exports', '<list of variables holding the dependencies>') {
  exports.Test = 5;
 });
-{% endhighlight %}
+```
 
 magic variable/dependency: `exports` .. used to define the public API of this module. other modules importing this module can access `Test`
 
 example
 
-{% highlight javascript %}
+```javascript
 define(['exports', 'd3', './other'], function(exports, d3, otherone) {
   exports.magic = function(arr) {
     var arr_max = d3.max(arr);
         return Math.max(arr_max, otherone.Test);
   };
 });
-{% endhighlight %}
+```
 
 Two kind of dependencies:
 
@@ -55,7 +55,7 @@ Two kind of dependencies:
 
 mixed mode supported by requirejs
 
-{% highlight javascript %}
+```javascript
 define(['require', 'exports'], function(require, exports) {
   var d3 = require('d3');
   var otherone = require('./other');
@@ -66,7 +66,7 @@ define(['require', 'exports'], function(require, exports) {
 });
 
 require will scan the code for require call to convert it to the other full format.
-{% endhighlight %}
+```
 
 
 ## Server frameworks
@@ -79,7 +79,7 @@ Flask is a micro python web framework using annotations for declaring accessible
 
 usage (*note: untested*)
 
-{% highlight python %}
+```python
 app = flask.Flask(__name__)
 
 @app.route('/hello')
@@ -91,5 +91,5 @@ def mambo_number(n):
   return 'Mambo #'+str(n)
 
 app.run()  
-{% endhighlight %}
+```
 

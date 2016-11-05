@@ -8,9 +8,9 @@ title:  Mangement Utility
 usage:
 
 
-{% highlight bash  %}
+```bash
 ./manage.sh <command> <args>
-{% endhighlight %}
+```
 
 ### *clone* / *clone_ssh* command
 
@@ -19,11 +19,11 @@ the `clone` command is a utility for cloning a repository and also cloning all o
 e.g.
 
 
-{% highlight bash  %}
+```bash
 ./manage.sh clone caleydo_core
 ./manage.sh clone Caleydo/caleydo_vis
 ./manage.sh clone https://github.com/Caleydo/caleydo_sample_app.git
-{% endhighlight %}
+```
 
 ### *clone_deps* / *clone_ssh_deps* command
 
@@ -32,9 +32,9 @@ The `clone_deps` command resolves and clones the dependencies of the given plugi
 usage:
 
 
-{% highlight bash  %}
+```bash
 ./manage.sh clone_deps caleydo_sample_app
-{% endhighlight %}
+```
 
 ### *pull* command
 
@@ -74,17 +74,17 @@ The `publish` command publishes a plugin to the caleydo registry
 usage:
 
 
-{% highlight bash  %}
+```bash
 ./manage.sh publish <plugin name>
-{% endhighlight %}
+```
 
 Before the first usage you have to enter the credentials for the caleydo registry, i.e. the nexus registry
 
 
-{% highlight bash  %}
+```bash
 npm adduser
 # follow instructions
-{% endhighlight %}
+```
 
 ### *compile*, *build*, *server*, *server_js*, *dev* commands
 

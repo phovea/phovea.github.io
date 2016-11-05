@@ -9,7 +9,7 @@ The [package.json](https://www.npmjs.org/doc/files/package.json.html) is the one
 
 `package.json`:
 
-{% highlight javascript %}
+```javascript
 {
   "name" : "...",
   "peerDependencies" : {
@@ -40,7 +40,7 @@ The [package.json](https://www.npmjs.org/doc/files/package.json.html) is the one
     "registry": "http://registry.caleydo.org/"
   }
 }
-{% endhighlight %}
+```
 
 There are several sections in package.json:
 
@@ -108,19 +108,19 @@ Defines a client-side application plugin. Use this to setup a web application th
 
 _Plugin Definition:_
 
-{% highlight javascript %}
+```javascript
 {
   "type": "app",
   "name": "Sample App"
 }
-{% endhighlight %}
+```
 
 
 An index.html file must exist.
 
 _index.html_
 
-{% highlight html %}
+```html
 <!doctype html>
 <html>
 <head>
@@ -131,17 +131,17 @@ _index.html_
 ...
 </body>
 </html>
-{% endhighlight %}
+```
 
 By default main.js is assumed to be the primary script file and is attempted to be loaded.
 
 _main.js_
 
-{% highlight javascript %}
+```javascript
 define(['d3', '../caleydo_core/main'], function (d3, C) {
   //Your application code
 });
-{% endhighlight %}
+```
 
 If your application script has a different name, e.g., "app.js", just change the script definition to
 `"<script src="/caleydo_web.js?app=./app"></script>"`.
@@ -156,7 +156,7 @@ Defines a client-side visualization plugin. Visualization plugins are intended f
 
 _Plugin Definition:_
 
-{% highlight javascript %}
+```javascript
 {
   "type": "vis",
   "name": "Sample Vis",
@@ -167,7 +167,7 @@ _Plugin Definition:_
     true
   ]
 }
-{% endhighlight %}
+```
 
 You can specify a range of additional attributes for visualituation plugins:
 

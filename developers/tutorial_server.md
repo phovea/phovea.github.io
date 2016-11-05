@@ -3,17 +3,17 @@ layout: documentation
 title:  Server Tutorial
 ---
 
-{% highlight bash  %}
+```bash
 git clone https://github.com/Caleydo/caleydo_web_container.git
 cd caleydo_web_container
 vagrant up
 # Wait and get some coffee. This will take a while.
 vagrant ssh
-{% endhighlight %}
+```
 
 Then, from within the VM:
 
-{% highlight bash  %}
+```bash
 # 1. Clone the repositories and their dependencies
 ./manage.sh clone caleydo_sample_app
 ./manage.sh clone caleydo_server
@@ -23,6 +23,6 @@ Then, from within the VM:
 
 # 3. Start caleydo web
 ./manage.sh server
-{% endhighlight %}
+```
 
 Go to [http://localhost:9000](http://localhost:9000).

@@ -5,7 +5,7 @@ title:  Caleydo Directory Structure
 
 After the installation you find the following basic directory structure:
 
-{% highlight bash  %}
+```bash
 caleydo_web_container
 +---.tscache
 +---.vagrant
@@ -20,7 +20,7 @@ caleydo_web_container
 +---scripts
 +---static
 +---typings
-{% endhighlight %}
+```
 
 
 * `caleydo_web_container` the cloned [caleydo_web_container repository](https://github.com/Caleydo/caleydo_web_container) as root directory

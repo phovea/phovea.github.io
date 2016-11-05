@@ -23,8 +23,8 @@ To launch the container, use common docker commands:
 
 or 
 
-{% highlight bash %}
+```bash
 docker run -d -P --name gapminder caleydo/gapminder
 docker port gapminder
 docker stop gapminder
-{% endhighlight %}
+```

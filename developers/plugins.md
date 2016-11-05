@@ -31,7 +31,7 @@ cons:
 * one time Promise always promise
 
 usage of a returned promise
-{% highlight javascript %}
+```javascript
 var r = someAsynFunction();
 r.then(function(result) {
   return 5; //or
@@ -42,17 +42,17 @@ r.then(function(result) {
     resolve(5);
   });
 });
-{% endhighlight %}
+```
 
 `then` will be executed after the promise resolved. Promises are a state machine (`init`, `resolved`, `rejected`). `then` handler can return a value or another promise. This allows simple chaining, e.g. `loadData().then(convertData).then(parseData).then(visualize);`
 
 utility functions:
 
-{% highlight javascript %}
+```javascript
 Promise.all([array of promises]) // returns a promise resolved when all are resolved
 Promise.resolve(value) // wrap the value as a resolved promise
 Project.reject(error) // wraps the error as rejected promise
-{% endhighlight %}
+```
 
 usage in Caleydo Web: where possible in favor of callbacks, e.g. `ajax.getJSON(url)`, `matrix.data()`, `plugins.list(matrix)`, ...
 
