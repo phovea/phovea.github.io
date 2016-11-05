@@ -15,8 +15,8 @@ A tighter connection with the IDE is useful, but can also be harder to set up.
 
 - Install [PyCharm](https://www.jetbrains.com/pycharm/)
 - Ask your team for a link for to the license key
-- If you haven't already, [`git clone https://github.com/phovea/caleydo_web_container.git`](https://github.com/phovea/caleydo_web_container)
-- "File -> Open..." and select the `caleydo_web_container` directory.
+- If you haven't already, [`git clone https://github.com/phovea/phovea_web_container.git`](https://github.com/phovea/phovea_web_container)
+- "File -> Open..." and select the `phovea_web_container` directory.
 - Download [settings.jar](/assets/settings.jar)
 - In PyCharm, "File -> Import Settings..." and select "settings.jar"
 
@@ -81,7 +81,7 @@ In order to use the compilers and watchers we have to install Node.js and some N
 - Check "Enable"
 - Confirm the Node interpreter
 - On the command line, `npm install -g typescript; npm install -g tslint`
-- Select the "Configuration file" radio button, and choose *tslint.json* from the top level of the caleydo_web_container repository
+- Select the "Configuration file" radio button, and choose *tslint.json* from the top level of the phovea_web_container repository
 - Apply the changes in the settings dialog
 
 ![TSLint Configuration screenshot](/assets/images/doc_screenshots/pycharm_settings_tslint.png)
@@ -92,7 +92,7 @@ In order to use the compilers and watchers we have to install Node.js and some N
 ### First configure a remote Python interpreter:
 
 - "PyCharm -> Preferences..." (on Mac) or "File -> Settings" (on Windows/Linux)
-- "Project: caleydo_web_container" -> "Project Interpreter"
+- "Project: phovea_web_container" -> "Project Interpreter"
 - Select the *Remote Python 2.7.6 (ssh://vagrant@localhost:2222/usr/bin/python)* option for "Project Interpreter"
 
 ### Then add a Run/Debug configuration:
@@ -103,4 +103,4 @@ In particular:
 
 - "Script" will be relative to "/vagrant" inside the VM. Remember the final slash (or backslash on Windows)
 - Select the remote Python interpreter you configured above
-- Specify necessary path mapping between local `caleydo_web_container`, and directory in the VM
+- Specify necessary path mapping between local `phovea_web_container`, and directory in the VM

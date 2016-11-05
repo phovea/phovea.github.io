@@ -4,8 +4,8 @@ title:  Server Tutorial
 ---
 
 ```bash
-git clone https://github.com/phovea/caleydo_web_container.git
-cd caleydo_web_container
+git clone https://github.com/phovea/phovea_web_container.git
+cd phovea_web_container
 vagrant up
 # Wait and get some coffee. This will take a while.
 vagrant ssh
@@ -15,13 +15,13 @@ Then, from within the VM:
 
 ```bash
 # 1. Clone the repositories and their dependencies
-./manage.sh clone caleydo_sample_app
-./manage.sh clone caleydo_server
+./manage.sh clone phovea_sample_app
+./manage.sh clone phovea_server
 
 # 2. Resolve dependencies of plugins
 ./manage.sh resolve
 
-# 3. Start caleydo web
+# 3. Start phovea web
 ./manage.sh server
 ```
 

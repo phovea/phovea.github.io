@@ -6,7 +6,7 @@ order: 3
 
 TODO: If this is still useful, let's get some live examples.
 
-Phovea supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/phovea/caleydo_core).
+Phovea supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/phovea/phovea_core).
 
 ## Loading Datasets
 
@@ -46,19 +46,19 @@ The following properties are common to all supported dataset types:
 * `size` The size of the dataset. In case of a matrix, number of rows and columns.
 * `separator`: String that is used as separator in the data file. Default: ",".
 
-An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [caleydo_sample_app](https://github.com/phovea/caleydo_sample_app).
+An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [phovea_sample_app](https://github.com/phovea/phovea_sample_app).
 
 ### Dataset Access
 
-There are two basic ways to access the data files from the client code. The first way is the **get** method specified in `caleydo_core/data`. It takes the dataset id specified in the dataset defininition as parameter and returns a promise for an associated data structure object (Matrix, Table, Vector, Stratification). Note that this method involves code from the server side of Phovea and thus will not work with the lightweight client library version.
+There are two basic ways to access the data files from the client code. The first way is the **get** method specified in `phovea_core/data`. It takes the dataset id specified in the dataset defininition as parameter and returns a promise for an associated data structure object (Matrix, Table, Vector, Stratification). Note that this method involves code from the server side of Phovea and thus will not work with the lightweight client library version.
 
-The second way is the **parseRemoteMatrix** method specified in `caleydo_d3/parser`. It takes the dataset file path as argument and returns a promise for an associated data structure object. In this case, the `index.json` file must be located in the same directory as the dataset file. This method will also work for the client library version of Phovea.
+The second way is the **parseRemoteMatrix** method specified in `phovea_d3/parser`. It takes the dataset file path as argument and returns a promise for an associated data structure object. In this case, the `index.json` file must be located in the same directory as the dataset file. This method will also work for the client library version of Phovea.
 
-Another way to access datasets is to use the **list** method from `caleydo_core/data`. This method looks for dataset definitions in all Phovea plugins. All found datasets are accessible via a promise to an array of datastructure objects. This method will not work in the client library version.
+Another way to access datasets is to use the **list** method from `phovea_core/data`. This method looks for dataset definitions in all Phovea plugins. All found datasets are accessible via a promise to an array of datastructure objects. This method will not work in the client library version.
 
 ## Data Structures
 
-All data structures are part of the [core plugin](https://github.com/phovea/caleydo_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*. 
+All data structures are part of the [core plugin](https://github.com/phovea/phovea_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*. 
 
 ### Matrix
 
@@ -344,7 +344,7 @@ server side principles
 
  * datastores
 
-   datastores are plugins that support different types of storage. current ones https://github.com/phovea/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/phovea/caleydo_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets. 
+   datastores are plugins that support different types of storage. current ones https://github.com/phovea/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/phovea/phovea_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets. 
 
  * numpy
    

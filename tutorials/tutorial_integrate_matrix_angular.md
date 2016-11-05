@@ -6,10 +6,10 @@ order: 6
 
 > **WARNING**: This tutorial is still in beta. The following doesn't work yet:
 >
-> - Single cell selections are not linked due to ambiguous selection. (See [#141](https://github.com/phovea/caleydo_web_container/issues/141#issuecomment-187878355))
-> - Phovea's single cell selection API `.selectProduct()` does not work as intended. (See [#141](https://github.com/phovea/caleydo_web_container/issues/141#issuecomment-187409616))
+> - Single cell selections are not linked due to ambiguous selection. (See [#141](https://github.com/phovea/phovea_web_container/issues/141#issuecomment-187878355))
+> - Phovea's single cell selection API `.selectProduct()` does not work as intended. (See [#141](https://github.com/phovea/phovea_web_container/issues/141#issuecomment-187409616))
 > - Cells selected in the heat-map visualizations can't be completely deselected by the user.
-> - Lodash shouldn't be needed. (See issue [#144](https://github.com/phovea/caleydo_web_container/issues/144))
+> - Lodash shouldn't be needed. (See issue [#144](https://github.com/phovea/phovea_web_container/issues/144))
 
 This example demonstrates how to integrate the matrix-based heat-map visualization into an Angular application. This tutorial illustrates the integration through an Angular-based table representation of the matrix' data and Phovea's heat-map visualization.
 

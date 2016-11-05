@@ -3,7 +3,7 @@ layout: documentation
 title:  Plugins
 ---
 
-Phovea components are found on [GitHub](https://github.com/phovea). To facilitate installation of Phovea, a [container repository](https://github.com/phovea/caleydo_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 
+Phovea components are found on [GitHub](https://github.com/phovea). To facilitate installation of Phovea, a [container repository](https://github.com/phovea/phovea_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 
 
 * lazy loaded plugins, load them upon first need <br>
    -> implications: need way to describe plugins -> registry
