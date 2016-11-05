@@ -12,7 +12,7 @@ Let's start with something simple:
 ```javascript
 {% include_relative demo_getting_started/demo_0.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html?demo_getting_started/demo_0"></iframe>
+<iframe src="../frame.html?demo_getting_started/demo_0"></iframe>
 
 The `parseMatrix()` function expects the data as 2D array and the column and row ids as additional parameter.
 
@@ -22,14 +22,14 @@ Using a heat map makes it easier to see patterns in the data. :)
 ```javascript
 {% include_relative demo_getting_started/demo_1.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html?demo_getting_started/demo_1"></iframe>
+<iframe src="../frame.html?demo_getting_started/demo_1"></iframe>
 
 We can let the user pick the visualization.
 
 ```javascript
 {% include_relative demo_getting_started/demo_2.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html?demo_getting_started/demo_2"></iframe>
+<iframe src="../frame.html?demo_getting_started/demo_2"></iframe>
 
 The other options are not that useful with this dataset,
 but we can download a more realistic one.
@@ -47,7 +47,7 @@ and when the response comes, execution can continue where it left off.
 ```javascript
 {% include_relative demo_getting_started/demo_3.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html?demo_getting_started/demo_3" height="370"></iframe>
+<iframe src="../frame.html?demo_getting_started/demo_3" height="370"></iframe>
 
 The scatter plot demonstrates a correlation in the data which wasn't
 obvious from the heat map.
@@ -57,4 +57,4 @@ We can also have multiple visualizations of the data open at once.
 ```javascript
 {% include_relative demo_getting_started/demo_4.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html?demo_getting_started/demo_4" height="800"></iframe>
+<iframe src="../frame.html?demo_getting_started/demo_4" height="800"></iframe>
