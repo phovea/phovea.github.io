@@ -16,7 +16,7 @@ The way data is accessed in Caleydo Web can vary. For example, data could be loa
 
 Tabular datasets in a form of .csv files can be loaded by providing the dataset file itself and a definition of the dataset. The definition is provided in an `index.json` file and could look like this:
 
-{% highlight json %}
+```json
 
 [
   {
@@ -35,7 +35,7 @@ Tabular datasets in a form of .csv files can be loaded by providing the dataset 
   }
 ]
 
-{% endhighlight %}
+```
 
 The following properties are common to all supported dataset types:
 
@@ -74,7 +74,7 @@ We consider a matrix as a two-dimensional data structure with rows and columns. 
 
 The definition for a matrix datafile could look like this:
 
-{% highlight json %}
+```json
 [
   {
     "name": "Expression Data",
@@ -92,7 +92,7 @@ The definition for a matrix datafile could look like this:
   }
 ]
 
-{% endhighlight %}
+```
 
 Consider the following properties for a matrix definition:
 
@@ -120,7 +120,7 @@ Methods to access the data make use of range (todo) parameters to specify a subs
 
 Example: 
 
-{% highlight javascript %}
+```javascript
 
 parser.parseRemoteMatrix('./data/anscombe_2.csv').then(function (matrix) {
 
@@ -133,7 +133,7 @@ parser.parseRemoteMatrix('./data/anscombe_2.csv').then(function (matrix) {
   }
 });
 
-{% endhighlight %}
+```
 
 
 
@@ -151,7 +151,7 @@ Like the matrix, a table is a two dimensional data structure with rows and colum
 
 This is how the definition of a table file could look like:
 
-{% highlight json %}
+```json
   {
     "name": "Test Heterogeneous 10x4",
     "path": "test_h10x4.csv",
@@ -192,7 +192,7 @@ This is how the definition of a table file could look like:
     }
   ]
 }
-{% endhighlight %}
+```
 
 
 Have a look at the following properties of a table definition:
@@ -204,7 +204,7 @@ Have a look at the following properties of a table definition:
 
 Tables in Caleydo Web are implementations of the [ITable](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_table_.itable.html) interface. An attribute worth mentioning is the `rowtype`, which specifies the id type of the rows. Many methods of the table such as `data(range)`´, `rows(range)`, or `view(range)` work similar to the matrix methods, using ranges as parameters and promises for return values. The main difference is how columns are handled: `cols(range)` returns a promise to an array of [vector](#vector) objects, one vector for each column. Here is a usage example:
 
-{% highlight javascript %}
+```javascript
 
 data.get('test_h10x4').then(function (table) {
 
@@ -218,7 +218,7 @@ data.get('test_h10x4').then(function (table) {
     });
 });
 
-{% endhighlight %}
+```
 
 ### Vector
 
@@ -237,7 +237,7 @@ A vector is a data structure that associates an id with a single attribute value
 
 This is how the definition of a vector looks like when it is loaded from a file:
 
-{% highlight json %}
+```json
 {
   "name": "Patient Vector",
   "path": "vector.csv",
@@ -249,7 +249,7 @@ This is how the definition of a vector looks like when it is loaded from a file:
     "range": [0, 1]
   }
 }
-{% endhighlight %}
+```
 
 Here, the `idtype` refers to the id type of the columns, whereas the `value` describes the values of the vector, just like in the matrix definition or the definition of table columns.
 
@@ -267,7 +267,7 @@ Vectors implement the [IVector](http://data.caleydo.org/builds/lib/docs/interfac
 | Patient 4 | two   |
 | Patient 5 | two   |
 
-{% highlight json %}
+```json
 {
   "name": "D2 Column KMeans 3",
   "origin": "demo_app/D2",
@@ -291,7 +291,7 @@ Vectors implement the [IVector](http://data.caleydo.org/builds/lib/docs/interfac
   
   "ws": "random"
 }
-{% endhighlight %}
+```
 
 #### Usage
 

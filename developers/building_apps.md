@@ -10,11 +10,11 @@ grunt task: `grunt build [--application=<application>] [--context=<context>]`
 
 folder structure:
 
-{% highlight bash  %}
+```bash
 /config-gen.js ... generated
 /caleydo_web.js ... generated
 /index.html ... generated
 /bower_components/<libs>
 /<plugins> ... compile css and ts and exclude them from making them public
-{% endhighlight %}
+```
 
