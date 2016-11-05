@@ -9,7 +9,7 @@ The [package.json](https://www.npmjs.org/doc/files/package.json.html) is the one
 
 `package.json`:
 
-```javascript
+{% highlight javascript %}
 {
   "name" : "...",
   "peerDependencies" : {
@@ -40,7 +40,7 @@ The [package.json](https://www.npmjs.org/doc/files/package.json.html) is the one
     "registry": "http://registry.caleydo.org/"
   }
 }
-```
+{% endhighlight %}
 
 There are several sections in package.json:
 
@@ -60,7 +60,7 @@ Note that the dependencies are specified in a way that is compatible with [bower
 
 Every plug-in is described by the following entries:
 
-```typescript
+{% highlight typescript %}
 export interface IPluginDesc {
   /**
    * type of plug-in, a name by convention for identifying different plug-in types
@@ -95,7 +95,7 @@ export interface IPluginDesc {
    */
   description: string;
 }
-```
+{% endhighlight %}
 
 Different plugin types may also define additional entries.
 Every plug-in has to have an entry method for creating the plug-in related content. Multiple plug-ins are possible per file by specifying different factory methods.
@@ -113,7 +113,7 @@ _Plugin Definition:_
   "type": "app",
   "name": "Sample App"
 }
-```
+{% endhighlight %}
 
 
 An index.html file must exist.
@@ -131,7 +131,7 @@ _index.html_
 ...
 </body>
 </html>
-```
+{% endhighlight %}
 
 By default main.js is assumed to be the primary script file and is attempted to be loaded.
 
@@ -141,7 +141,7 @@ _main.js_
 define(['d3', '../caleydo_core/main'], function (d3, C) {
   //Your application code
 });
-```
+{% endhighlight %}
 
 If your application script has a different name, e.g., "app.js", just change the script definition to
 `"<script src="/caleydo_web.js?app=./app"></script>"`.
@@ -167,7 +167,7 @@ _Plugin Definition:_
     true
   ]
 }
-```
+{% endhighlight %}
 
 You can specify a range of additional attributes for visualituation plugins:
 
