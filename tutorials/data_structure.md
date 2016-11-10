@@ -10,7 +10,7 @@ Phovea supports simple loading and handling of various data. It provides data st
 
 ## Loading Datasets
 
-The way data is accessed in Phovea can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different [plugins](/developers/plugins/) and concrete implementations of data structure interfaces how the data is accessed.
+The way data is accessed in Phovea can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different [plugins](/contributors/plugins/) and concrete implementations of data structure interfaces how the data is accessed.
 
 ### Dataset Parsing
 

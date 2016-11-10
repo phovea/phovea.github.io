@@ -26,7 +26,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   float: left;
   text-align: center;
   margin-right: 5px;
-  width: 110px;
+  width: 130px;
   
   &:last-child {
     margin-right: 0px;
@@ -169,8 +169,8 @@ p {
   @include navigation-button($tutorials-color);
 }
 
-.developers-button {
-  @include navigation-button($developers-color);
+.contributors-button {
+  @include navigation-button($contributors-color);
 }
 
 .reference-button {
@@ -213,8 +213,8 @@ p {
   @include page-title($tutorials-color);
 }
 
-.developers-title {
-  @include page-title($developers-color);
+.contributors-title {
+  @include page-title($contributors-color);
 }
 
 .reference-title {
@@ -841,5 +841,12 @@ footer {
 .repo_list {
   li {
     margin-bottom: 10px;
+  }
+}
+
+a.current {
+  font-weight: bold;
+  &:before {
+    content: "\27A4   ";
   }
 }
