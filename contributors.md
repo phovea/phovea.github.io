@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: For Developers
+title: For Contributors
 ---
 
 This is the right place to begin if you're making new Phovea components with

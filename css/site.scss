@@ -169,8 +169,8 @@ p {
   @include navigation-button($tutorials-color);
 }
 
-.developers-button {
-  @include navigation-button($developers-color);
+.contributors-button {
+  @include navigation-button($contributors-color);
 }
 
 .reference-button {
@@ -213,8 +213,8 @@ p {
   @include page-title($tutorials-color);
 }
 
-.developers-title {
-  @include page-title($developers-color);
+.contributors-title {
+  @include page-title($contributors-color);
 }
 
 .reference-title {
