@@ -19,7 +19,9 @@ layout: default
         {% assign other_pages = site.pages | sort: "order" %}
         <ul>
             <!-- Special case to include index page in sidebar. -->
-            <li><a href="{% if dir == 'welcome' %}/{% else %}/{{ dir }}{% endif %}">{{ dir | capitalize }}</a></li>
+            <li><a href="{% if dir == 'welcome' %}/{% else %}/{{ dir }}{% endif %}"
+                   {% unless path[2].size > 0 %}class="current"{% endunless %}
+            >{{ dir | capitalize }}</a></li>
             <!-- Assigning other_dir didn't work right. -->
             {% for other_page in other_pages %}
                 {% capture other_dir %}{{ other_page.path | split: "/" | first }}{% endcapture %}
