@@ -843,3 +843,10 @@ footer {
     margin-bottom: 10px;
   }
 }
+
+a.current {
+  font-weight: bold;
+  &:before {
+    content: "\27A4   ";
+  }
+}

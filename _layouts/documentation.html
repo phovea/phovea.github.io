@@ -24,7 +24,16 @@ layout: default
             {% for other_page in other_pages %}
                 {% capture other_dir %}{{ other_page.path | split: "/" | first }}{% endcapture %}
                 {% if other_dir == dir %}{% if other_page.title.size > 0 %}
-                    <li><a href="{{ other_page.url }}">{{ other_page.title }}</a></li>
+                    {% if other_page.path == page.path %}
+                        {% assign current = true %}
+                    {% elsif current %}
+                        {% assign current = false %}
+                        {% assign next_url = other_page.url %}
+                        {% assign next_title = other_page.title %}
+                    {% endif %}
+                    <li><a href="{{ other_page.url }}"
+                           {% if current %}class="current"{% endif %}
+                    >{{ other_page.title }}</a></li>
                 {% endif %}{% endif %}
             {% endfor %}
         </ul>
@@ -32,6 +41,10 @@ layout: default
 
     <article class="docs-content-main">
         {{ content }}
+        {% if next_url %}
+            <hr>
+            Next: <a href="{{ next_url }}">{{ next_title }}</a>
+        {% endif %}
     </article>
 
 </div>
