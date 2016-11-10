@@ -4,6 +4,11 @@ title:  Getting Started
 order: 1
 ---
 
+> These tutorials only explore the JavaScript library for Phovea:
+If you will be contributing to the Phovea internals, or working with 
+Phovea server components, feel free to jump straight to the 
+[contributor documentation](/contributors/).
+
 (This example is also available at
 [jsfiddle](http://jsfiddle.net/gh/get/library/pure/phovea/phovea.github.io/tree/master/tutorials/demo_getting_started/jsfiddle).)
 
