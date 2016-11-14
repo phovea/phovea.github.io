@@ -80,8 +80,20 @@ The visualizations in Phovea are created with [D3](https://github.com/d3/d3/wiki
 [JavaScript Promises](https://developers.google.com/web/fundamentals/getting-started/primers/promises)
 are used throughout Phovea. The main idea of Promises is that asynchronous processes can be handled in
 code that can still be read lineary. At some points in Phovea a Promise is returned even is a value is
-usually immediately available, because we wanted to accomodate instances where a query to the server
+immediately available, because we wanted to accomodate instances where a query to the server
 might actually be necessary.
 
 ## Testing
 
+When you push changes to Github, tests can automatically be run with
+[Travis](https://docs.travis-ci.com/user/getting-started/). If you have a new project,
+two things are necessary:
+
+- Enable the tests by flipping the switch for your repo on https://travis-ci.org/profile/phovea,
+or the appropriate list for your organization. (Click the "resync" button if it is not on the 
+list at first.)
+- Add a travis.yml to indicate what tests should be run.
+
+Anything that can return either a zero (success) or non-zero (failure) status can be part of your
+tests, but typically unit tests will be written with [Jasmine](https://jasmine.github.io/) and run
+with the [Karma test runner](https://karma-runner.github.io/).
