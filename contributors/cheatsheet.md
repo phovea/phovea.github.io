@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title:  Cheatsheet
+order: 2
 ---
 
 Prerequisite: Install Phovea generator

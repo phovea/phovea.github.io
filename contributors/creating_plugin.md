@@ -1,7 +1,11 @@
 ---
 layout: documentation
-title:  Creating Plugins
+title:  Creating Plugins TODO
+order: 1000
 ---
+
+**WARNING**: This information may be out of date.
+If you know what is currently correct, please make a PR.
 
 Plug-ins are [require.js](http://requirejs.org/) modules with an additional meta-data description as section within its `package.json` file. Multiple plugins can be defined within a single package.json.
 
