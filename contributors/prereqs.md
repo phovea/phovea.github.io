@@ -57,8 +57,31 @@ than committing to master: This gives the system time to do a basic syntax check
 
 ## Packaging
 
+We are using NPM's [`package.json`](https://docs.npmjs.com/files/package.json)
+to manage dependencies between components. Note, however, that we are *not* really using the Node.js
+language, nor the central NPM repository.
+
+New projects can be created with [Yeoman](http://yeoman.io/) generators.
+See our [cheatsheet](/contributors/cheatsheet/) for more details.
+
 ## Server
+
+Server-side code uses the Python [Flask](http://flask.pocoo.org/) framework.
 
 ## Client
 
+Client-side code is written in [Typescript](https://www.typescriptlang.org/) and then compiled down
+to Javascript. Typescript adds a typesystem to Javascript, and also lets you use features of the newest
+versions of the ECMAScript even on older browsers.  As part of the build process, multiple libraries
+are combined using [Webpack](https://webpack.github.io/).
+
+The visualizations in Phovea are created with [D3](https://github.com/d3/d3/wiki).
+
+[JavaScript Promises](https://developers.google.com/web/fundamentals/getting-started/primers/promises)
+are used throughout Phovea. The main idea of Promises is that asynchronous processes can be handled in
+code that can still be read lineary. At some points in Phovea a Promise is returned even is a value is
+usually immediately available, because we wanted to accomodate instances where a query to the server
+might actually be necessary.
+
 ## Testing
+
