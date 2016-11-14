@@ -4,6 +4,9 @@ title:  Registry TODO
 order: 1000
 ---
 
+**WARNING**: This information may be out of date.
+If you know what is currently correct, please make a PR.
+
 registry.phovea.org ... published compiled plugins with a specific version
 
 building ... main challenge ... TypeScript dependencies, e.g. if parts of the core are used you need it for compilation in the same directory structure (neighboring) 

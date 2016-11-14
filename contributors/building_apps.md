@@ -4,6 +4,9 @@ title:  Building Applications TODO
 order: 1000
 ---
 
+**WARNING**: This information may be out of date.
+If you know what is currently correct, please make a PR.
+
 grunt task: `grunt build [--application=<application>] [--context=<context>]`
 
 * application: the main script file of the application which is normally provided as parameter to the `phovea_web.js` file

@@ -4,6 +4,9 @@ title:  Plugins TODO
 order: 1000
 ---
 
+**WARNING**: This information may be out of date.
+If you know what is currently correct, please make a PR.
+
 Phovea components are found on [GitHub](https://github.com/phovea). To facilitate installation of Phovea, a [container repository](https://github.com/phovea/phovea_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 
 
 * lazy loaded plugins, load them upon first need <br>

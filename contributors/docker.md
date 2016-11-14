@@ -4,6 +4,9 @@ title:  Docker TODO
 order: 1000
 ---
 
+**WARNING**: This information may be out of date.
+If you know what is currently correct, please make a PR.
+
 [Docker](http://docker.com/) can be used to bundle Phovea packages into containers. 
 
 ## Build Image

@@ -4,6 +4,9 @@ title:  Setting up Vagrant TODO
 order: 1000
 ---
 
+**WARNING**: This information may be out of date.
+If you know what is currently correct, please make a PR.
+
 Note: Setting up a dev environment requires a working installation of Git!
 
 - *Windows Only*: Install [Git](http://git-scm.com/download/win)
