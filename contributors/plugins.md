@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Plugins
+title:  Plugins TODO
+order: 1000
 ---
 
 Phovea components are found on [GitHub](https://github.com/phovea). To facilitate installation of Phovea, a [container repository](https://github.com/phovea/phovea_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 

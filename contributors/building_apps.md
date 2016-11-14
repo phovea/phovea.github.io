@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Building Applications
+title:  Building Applications TODO
+order: 1000
 ---
 
 grunt task: `grunt build [--application=<application>] [--context=<context>]`

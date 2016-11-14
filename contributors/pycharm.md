@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Setting up PyCharm
+title:  Setting up PyCharm TODO
+order: 1000
 ---
 
 There are three approaches to developing Phovea in PyCharm:

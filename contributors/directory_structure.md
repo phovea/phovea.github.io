@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Phovea Directory Structure
+title:  Phovea Directory Structure TODO
+order: 1000
 ---
 
 After the installation you find the following basic directory structure:

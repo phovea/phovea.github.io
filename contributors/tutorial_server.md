@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Server Tutorial
+title:  Server Tutorial TODO
+order: 1000
 ---
 
 ```bash

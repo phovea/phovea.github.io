@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Mangement Utility
+title:  Mangement Utility TODO
+order: 1000
 ---
 
 `manage.py` is a management utility for installling plugins, pulling repositories, and resolving external dependencies.

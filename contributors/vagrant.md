@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Setting up Vagrant
+title:  Setting up Vagrant TODO
+order: 1000
 ---
 
 Note: Setting up a dev environment requires a working installation of Git!

@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Registry
+title:  Registry TODO
+order: 1000
 ---
 
 registry.phovea.org ... published compiled plugins with a specific version

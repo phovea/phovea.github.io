@@ -1,6 +1,7 @@
 ---
 layout: documentation
-title:  Installation
+title:  Installation TODO
+order: 1000
 ---
 
 To develop Phovea applications, you can use a container repository that includes a Vagrant VM.
