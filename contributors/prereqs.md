@@ -21,9 +21,25 @@ organization on Github. If you haven't used git itself before, please read throu
 or try this [interactive one](https://try.github.io/).
 
 To make contributions, please make sure you're up to date, and then branch from *master*.
-When you're done, make a pull request (PR) for your branch on Github. At this point, you might
-get feedback from another developer, but for now we do not require that: You can merge your
-own PR back into master.
+When you're done, make a pull request (PR) for your branch on Github. The primary maintainer for
+each project should keep an eye on issues and PRs as they come in, but feel free to nudge them:
+
+| repo                         | primary   | backup       |
+|------------------------------|-----------|--------------|
+| generator-phovea             | @sgratzl  | @cnobre      |
+| phovea_bootstrap_fontawesome | @thinkh   | @mccalluc    |
+| phovea_core                  | @thinkh   | @aaljuhani   |
+| phovea_importer              | @sgratzl  | @pkerpedjiev |
+| phovea_bundle_lib            | @sgratzl  | @mccalluc    |
+| phovea_clue                  | @thinkh   | @cnobre      |
+| phovea_processing_queue      | @thinkh   | @bikramkawan |
+| phovea_security_flask        | @thinkh   | @aaljuhani   |
+| phovea_vis_lineup            | @thinkh   | @pkerpedjiev |
+| phovea_vis / phovea_d3       | @thinkh   | @mccalluc    |
+| phovea_server                | @sgratzl  | @bikramkawan |
+| phovea_data_*                | @thinkh   | @pkerpedjiev |
+| phovea_graph_dot             | @thinkh   | @cnobre      |
+
 
 As the project develops we will used tagged releases, following
 [semantic versioning](http://semver.org/) conventions, but that is not necessary for every merge.
