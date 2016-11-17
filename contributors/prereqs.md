@@ -29,7 +29,7 @@ each project should keep an eye on issues and PRs as they come in, but feel free
 | generator-phovea             | @sgratzl  | @cnobre      |
 | phovea_bootstrap_fontawesome | @thinkh   | @mccalluc    |
 | phovea_core                  | @thinkh   | @aaljuhani   |
-| phovea_importer              | @sgratzl  | @pkerpedjiev |
+| phovea_importer              | @thinkh   | @pkerpedjiev |
 | phovea_bundle_lib            | @sgratzl  | @mccalluc    |
 | phovea_clue                  | @thinkh   | @cnobre      |
 | phovea_processing_queue      | @thinkh   | @bikramkawan |
@@ -39,6 +39,20 @@ each project should keep an eye on issues and PRs as they come in, but feel free
 | phovea_server                | @sgratzl  | @bikramkawan |
 | phovea_data_*                | @thinkh   | @pkerpedjiev |
 | phovea_graph_dot             | @thinkh   | @cnobre      |
+|                               
+| phovea.github.io             | @mccalluc | @aaljuhani   |
+|
+| Caleydo/lineup.js            | @thinkh   | @pkerpedjiev |
+| Caleydo/targid_ppi           | @thinkh   | @cnobre      |
+| Caleydo/taco*                | @thinkh   | @aaljuhani   |
+| Caleydo/targid*              | @thinkh   | @bikramkawan |
+| sgratzl/lineup_demos         | @thinkh   | @pkerpedjiev |
+| Caleydo/stratomex_js         | @thinkh   | @aaljuhani   |
+| Caleydo/domino_js            | @thinkh   | @bikramkawan |
+|
+| Caleydo/pathfinder           | @thinkh   |
+| Caleydo/vials                | @thinkh   |
+
 
 
 As the project develops we will used tagged releases, following
