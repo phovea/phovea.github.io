@@ -20,6 +20,23 @@ cd name_of_new_plugin
 yo phovea
 ```
 
+Depend on another plugin or library
+-----------------------------------
+
+```
+cd name_of_new_plugin
+yo phovea:add-dependency
+```
+
+
+Define a new extension point
+----------------------------
+
+```
+cd name_of_new_plugin
+yo phovea:add-extension
+```
+
 Launch a Phovea application
 ----------------------------
 
