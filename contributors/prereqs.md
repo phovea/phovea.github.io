@@ -26,6 +26,8 @@ each project should keep an eye on issues and PRs as they come in, but feel free
 
 | repo                         | primary   | backup       |
 |------------------------------|-----------|--------------|
+| phovea.github.io             | @mccalluc | @aaljuhani   |
+|
 | generator-phovea             | @sgratzl  | @cnobre      |
 | phovea_bootstrap_fontawesome | @thinkh   | @mccalluc    |
 | phovea_core                  | @thinkh   | @aaljuhani   |
@@ -35,18 +37,16 @@ each project should keep an eye on issues and PRs as they come in, but feel free
 | phovea_processing_queue      | @thinkh   | @bikramkawan |
 | phovea_security_flask        | @sgratzl   | @aaljuhani   |
 | phovea_server                | @sgratzl  | @bikramkawan |
-| phovea_vis_lineup            | ?   | @pkerpedjiev |
-| phovea_vis / phovea_d3       | @thinkh   | @mccalluc    |
 | phovea_data_*                | @thinkh   | @pkerpedjiev |
 | phovea_graph_dot             | ?   | @cnobre      |
-|                               
-| phovea.github.io             | @mccalluc | @aaljuhani   |
+| phovea_vis / phovea_d3       | @thinkh   | @mccalluc    |
+| phovea_vis_lineup            | ?   | @pkerpedjiev |
 |
 | Caleydo/lineup.js            | ?   | @pkerpedjiev |
+| sgratzl/lineup_demos         | ?   | @pkerpedjiev |
 | Caleydo/taco*                | @thinkh   | @aaljuhani   |
 | Caleydo/targid_ppi           | @mstreit   | @cnobre      |
 | Caleydo/targid*              | @mstreit   | @bikramkawan |
-| sgratzl/lineup_demos         | ?   | @pkerpedjiev |
 | Caleydo/stratomex_js         | @thinkh   | @aaljuhani   |
 | Caleydo/domino_js            | @thinkh   | @bikramkawan |
 |
