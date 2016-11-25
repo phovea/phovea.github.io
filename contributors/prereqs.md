@@ -53,7 +53,15 @@ each project should keep an eye on issues and PRs as they come in, but feel free
 | Caleydo/pathfinder           | @thinkh   |
 | Caleydo/vials                | @thinkh   |
 
+Maintainers for each project have responsibilities:
 
+- As issues come in, make sure labels are assigned.
+- Try to reproduce bugs and make sure the recipes provide enough information.
+- Assign issues to the best person to do the work.
+- Review code during pull requests.
+- Fix the master branch if it breaks.
+- Run `yo phovea:update` as requested by `phovea-generator` folks.
+- Keep the documentation up to date.
 
 As the project develops we will used tagged releases, following
 [semantic versioning](http://semver.org/) conventions, but that is not necessary for every merge.
