@@ -21,9 +21,47 @@ organization on Github. If you haven't used git itself before, please read throu
 or try this [interactive one](https://try.github.io/).
 
 To make contributions, please make sure you're up to date, and then branch from *master*.
-When you're done, make a pull request (PR) for your branch on Github. At this point, you might
-get feedback from another developer, but for now we do not require that: You can merge your
-own PR back into master.
+When you're done, make a pull request (PR) for your branch on Github. The primary maintainer for
+each project should keep an eye on issues and PRs as they come in, but feel free to nudge them:
+
+| repo                         | primary   | backup       |
+|------------------------------|-----------|--------------|
+| phovea.github.io             | @mccalluc | @aaljuhani   |
+|
+| generator-phovea             | @sgratzl  | @cnobre      |
+| phovea_bootstrap_fontawesome | @thinkh   | @mccalluc    |
+| phovea_core                  | @thinkh   | @aaljuhani   |
+| phovea_importer              | @thinkh   | @pkerpedjiev |
+| phovea_bundle_lib            | @sgratzl  | @mccalluc    |
+| phovea_clue                  | @thinkh   | @cnobre      |
+| phovea_processing_queue      | @thinkh   | @bikramkawan |
+| phovea_security_flask        | @sgratzl   | @aaljuhani   |
+| phovea_server                | @sgratzl  | @bikramkawan |
+| phovea_data_*                | @thinkh   | @pkerpedjiev |
+| phovea_graph_dot             | ?   | @cnobre      |
+| phovea_vis / phovea_d3       | @thinkh   | @mccalluc    |
+| phovea_vis_lineup            | ?   | @pkerpedjiev |
+|
+| Caleydo/lineup.js            | ?   | @pkerpedjiev |
+| sgratzl/lineup_demos         | ?   | @pkerpedjiev |
+| Caleydo/taco*                | @thinkh   | @aaljuhani   |
+| Caleydo/targid_ppi           | @mstreit   | @cnobre      |
+| Caleydo/targid*              | @mstreit   | @bikramkawan |
+| Caleydo/stratomex_js         | @thinkh   | @aaljuhani   |
+| Caleydo/domino_js            | @thinkh   | @bikramkawan |
+|
+| Caleydo/pathfinder           | ?   |
+| Caleydo/vials                | ?   |
+
+Maintainers for each project have responsibilities:
+
+- As issues come in, make sure labels are assigned.
+- Try to reproduce bugs and make sure the recipes provide enough information.
+- Assign issues to the best person to do the work.
+- Review code during pull requests.
+- Fix the master branch if it breaks.
+- Run `yo phovea:update` as requested by `phovea-generator` folks.
+- Keep the documentation up to date.
 
 As the project develops we will used tagged releases, following
 [semantic versioning](http://semver.org/) conventions, but that is not necessary for every merge.
