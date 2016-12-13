@@ -40,19 +40,19 @@ cd name_of_plugin
 yo phovea:update
 ```
 
-Use an ueber context
+Use a workspace
 --------------------
 
-An ueber context helps if you are developing multiple plugins at the same time 
+A workspace helps if you are developing multiple plugins at the same time 
 and working with server side plugins using [Vagrant](https://www.vagrantup.com). 
 The basic idea is to use the parent directory of the plugins, so that they can
 share a common npm installation and vagrant setup.
 
 ```
-mkdir ueber_directory
-cd ueber_directory
+mkdir workspace_directory
+cd workspace_directory
 # initialize/clone/resolve plugins
-yo phovea:ueber
+yo phovea:workspace
 npm install
 vagrant up
 ```
@@ -66,16 +66,16 @@ npm run start:name_of_application
 ### Clone an existing Phovea plugin
 
 ```
-cd ueber_directory
+cd workspace_directory
 yo phovea:clone
 ```
 
 ### Resolve dependencies of plugin
 
-i.e., clone the plugins dependencies into the ueber context
+i.e., clone the plugins dependencies into the workspace
 
 ```
-cd ueber_directory
+cd workspace_directory
 yo phovea:resolve
 ```
 
@@ -84,7 +84,7 @@ yo phovea:resolve
 e.g., pull all git repos
 
 ```
-cd ueber_directory
+cd workspace_directory
 ./forEach git pull
 ```
 
