@@ -49,8 +49,8 @@ The basic idea is to use the parent directory of the plugins, so that they can
 share a common npm installation and vagrant setup.
 
 ```
-mkdir workspace_directory
-cd workspace_directory
+mkdir workspace
+cd workspace
 # initialize/clone/resolve plugins
 yo phovea:workspace
 npm install
@@ -66,7 +66,7 @@ npm run start:name_of_application
 ### Clone an existing Phovea plugin
 
 ```
-cd workspace_directory
+cd workspace
 yo phovea:clone
 ```
 
@@ -75,7 +75,7 @@ yo phovea:clone
 i.e., clone the plugins dependencies into the workspace
 
 ```
-cd workspace_directory
+cd workspace
 yo phovea:resolve
 ```
 
@@ -84,7 +84,7 @@ yo phovea:resolve
 e.g., pull all git repos
 
 ```
-cd workspace_directory
+cd workspace
 ./forEach git pull
 ```
 
