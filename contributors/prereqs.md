@@ -42,7 +42,7 @@ each project should keep an eye on issues and PRs as they come in, but feel free
 | phovea_vis / phovea_d3       | @thinkh   | @mccalluc    |
 | phovea_vis_lineup            | ?   | @pkerpedjiev |
 |
-| Caleydo/lineup.js            | ?   | @pkerpedjiev |
+| Caleydo/lineup.js            | @sgratzl   | ? |
 | sgratzl/lineup_demos         | ?   | @pkerpedjiev |
 | Caleydo/taco*                | @thinkh   | @aaljuhani   |
 | Caleydo/targid_ppi           | @mstreit   | @cnobre      |
