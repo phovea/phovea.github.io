@@ -43,10 +43,10 @@ yo phovea:update
 Use a workspace
 --------------------
 
-A workspace helps if you are developing multiple plugins at the same time 
-and working with server side plugins using [Vagrant](https://www.vagrantup.com). 
+A workspace helps if you are developing multiple plugins at the same time
+and working with server side plugins using [Docker](https://www.docker.com/) and [Docker Compose](https://www.docker.com/products/docker-compose).
 The basic idea is to use the parent directory of the plugins, so that they can
-share a common npm installation and vagrant setup.
+share a common npm installation and docker setup.
 
 ```
 mkdir workspace
@@ -54,10 +54,10 @@ cd workspace
 # initialize/clone/resolve plugins
 yo phovea:workspace
 npm install
-vagrant up
+docker-compose up
 ```
 
-### Launch a Phovea application/service
+### Launch a Phovea application
 
 ```
 npm run start:name_of_application
