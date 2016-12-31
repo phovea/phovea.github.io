@@ -11,8 +11,7 @@ In order to debug the server using PyCharm you need to do two things:
 ## prepare environment
 
 1. patch `docker-compose.yml`
-
-```
+ ```
 service:
   api:
     ports:
@@ -21,11 +20,10 @@ service:
     command: /usr/sbin/sshd -D
     volumes:
       - '.:/phovea'
-```
-
-add the new port entry and the new command entry. 
-This will say docker-compose not to launch the server by default but a ssh server to which PyCharm can connect to. 
-In addition, the ssh port is mapped to the port 2222. 
+ ```
+ add the new port entry and the new command entry. 
+ This will say docker-compose not to launch the server by default but a ssh server to which PyCharm can connect to. 
+ In addition, the ssh port is mapped to the port 2222. 
 
 1. restart service
  ```
@@ -42,6 +40,9 @@ In addition, the ssh port is mapped to the port 2222.
  * Password: `docker`
  * Python interpreter path: `/usr/local/bin/python` **!this is different from the default**
 1. PyCharm should now be able to connect to the docker container and upload some helper files
+1. Create default Path mappings
+ 1. Select project directory and specify it is located at `/phovea`
+ 1. In the end the overview page should state: `<Project root>->/phovea`
 
 
 ## create and run the server using PyCharm
