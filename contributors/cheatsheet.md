@@ -44,7 +44,7 @@ Use a workspace
 --------------------
 
 A workspace helps if you are developing multiple plugins at the same time
-and working with server side plugins using [Docker](https://www.docker.com/) and [Docker Compose](https://www.docker.com/products/docker-compose).
+and working with server side plugins using [Docker](https://www.docker.com/) and [Docker Compose](https://www.docker.com/products/docker-compose). In addiiton, it generates a PyCharm project, such that the directory can be opened as a PyCharm project. 
 The basic idea is to use the parent directory of the plugins, so that they can
 share a common npm installation and docker setup.
 
