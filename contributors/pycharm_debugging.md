@@ -4,21 +4,22 @@ title:  PyCharm Debugging
 order: 2
 ---
 
-# PyCharm Debugging
+# PyCharm debugging
 
 In order to debug the server using PyCharm you need to do two things: 
 
-## prepare environment
+## Prepare environment
 
-restart docker with the debug mixin
+Restart docker with the debug mixin
+
 ```
 docker-compose -f docker-compose.yml -f docker-compose-debug.yml up
 ```
  
-## create new remote python interpreter
+## Create new remote Python interpreter
 
-1. within PyCharm go to settings -> Project Interpreter -> Cogs symbol -> Add Remote...
-1. select SSH-Credentials and use the following values: 
+1. Within PyCharm go to Settings -> Project Interpreter -> Cogs symbol -> Add Remote...
+1. Select SSH-Credentials and use the following values: 
  * Host: `localhost`
  * Port: `2222`
  * User name: `root`
@@ -30,6 +31,6 @@ docker-compose -f docker-compose.yml -f docker-compose-debug.yml up
  1. In the end the overview page should state: `<Project root>->/phovea`
 
 
-## create and run the server using PyCharm
+## Create and run the server using PyCharm
 
 TODO
