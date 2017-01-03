@@ -5,7 +5,9 @@ order: 2
 ---
 
 
-First part we explain how all Phovea repositories are structured. Then how to contribute new features and bugfixes to Phovea repositories and finally how to proceed when creating a new release.
+First we explain how all Phovea repositories are structured,
+then we describe how to contribute new features and bugfixes,
+and conclude by listing the steps to create a new release.
 
 ## Phovea repository structure
 
@@ -58,7 +60,7 @@ In summary:
   * Update version number and build dates
   * Apply minor fixes only
   * Change Phovea dependencies from **develop** to the new version number
-    * NOTE: Follow the dependency hierarchy ([see below](#dependency-hierarchy))
+    * NOTE: Follow the [dependency hierarchy](#dependency-hierarchy) below
 1. File two [pull requests](https://blog.alphasmanifesto.com/2016/07/11/how-to-create-a-good-pull-request/): 1) **release** -> **master**; 2) **release** -> **develop**
 1. Check if Travis is green for both PRs, otherwise fix the issue with a new commit to the **release** branch
 1. Assign a reviewer for both PRs
@@ -72,7 +74,9 @@ In summary:
 
 ### Dependency hierarchy
 
-When releasing a new version follow the hierarchy from outside to inside. Please note that some dependency might have changed meanwhile. The most recent dependencies are listed in the *packages.json* within each repository.
+Follow the hierarchy from outside to inside as you make release branches,
+though note that other dependencies might have changed meanwhile.
+The most recent dependencies are listed in the *packages.json* in the **master** branch of each repository.
 
 * [server](https://github.com/phovea/phovea_server)
  * [data_redis](https://github.com/phovea/phovea_data_redis)
