@@ -40,7 +40,7 @@ In summary:
 1. Develop features in a separate **feature branch** that is branched off the **develop** branch
   * IMPORTANT: If your feature affects code in multiple repositories, use the same branch name accross all repositories
 1. Remember to commit and push your changes regularly
-1. Once the feature implementation is done, [file a pull request](https://blog.alphasmanifesto.com/2016/07/11/how-to-create-a-good-pull-request/) (PR) and reference the PR in other repositories for the same feature
+1. Once the feature implementation is done, [file a pull request](https://blog.alphasmanifesto.com/2016/07/11/how-to-create-a-good-pull-request/) (PR) and cross-reference the PR in other repositories for the same feature
 1. Check if Travis is green, otherwise fix the issue with a new commit to the **feature** branch
 1. Assign a reviewer for your PR
 1. The reviewer will [review the code](https://blog.alphasmanifesto.com/2016/11/17/how-to-perform-a-good-code-review/) and reject or approve the PR
