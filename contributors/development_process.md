@@ -40,10 +40,10 @@ In summary:
 1. Develop features in a separate **feature branch** that is branched off the **develop** branch
   * IMPORTANT: If your feature affects code in multiple repositories, use the same branch name accross all repositories
 1. Remember to commit and push your changes regularly
-1. Once the feature implementation is done, file a PR and reference the PR in other repositories for the same feature
+1. Once the feature implementation is done, [file a pull request](https://blog.alphasmanifesto.com/2016/07/11/how-to-create-a-good-pull-request/) (PR) and reference the PR in other repositories for the same feature
 1. Check if Travis is green, otherwise fix the issue with a new commit to the **feature** branch
 1. Assign a reviewer for your PR
-1. The reviewer will reject or approve the PR
+1. The reviewer will [review the code](https://blog.alphasmanifesto.com/2016/11/17/how-to-perform-a-good-code-review/) and reject or approve the PR
 1. Approved PRs merge the new feature back to the **develop** branch
 1. The reviewer removes the **feature** branch
 1. The *develop branch* collects all features for the (undefined) next release
@@ -59,9 +59,10 @@ In summary:
   * Apply minor fixes only
   * Change Phovea dependencies from **develop** to the new version number
     * NOTE: Follow the dependency hierarchy (beginning with phovea_core)
-1. File two PRs: 1) **release** -> **master**; 2) **release** -> **develop**
+1. File two [pull requests](https://blog.alphasmanifesto.com/2016/07/11/how-to-create-a-good-pull-request/): 1) **release** -> **master**; 2) **release** -> **develop**
 1. Check if Travis is green for both PRs, otherwise fix the issue with a new commit to the **release** branch
 1. Assign a reviewer for both PRs
+1. The reviewer will test once more and check if the version number is correct
 1. Approved PRs merge all features back into **master** and **develop**
 1. The reviewer removes the **release** branch
 1. Go to the **master** branch
