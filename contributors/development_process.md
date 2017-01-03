@@ -58,7 +58,7 @@ In summary:
   * Update version number and build dates
   * Apply minor fixes only
   * Change Phovea dependencies from **develop** to the new version number
-    * NOTE: Follow the dependency hierarchy (see below)
+    * NOTE: Follow the dependency hierarchy ([see below](#dependency-hierarchy))
 1. File two [pull requests](https://blog.alphasmanifesto.com/2016/07/11/how-to-create-a-good-pull-request/): 1) **release** -> **master**; 2) **release** -> **develop**
 1. Check if Travis is green for both PRs, otherwise fix the issue with a new commit to the **release** branch
 1. Assign a reviewer for both PRs
