@@ -16,7 +16,7 @@ to future developers.
 
 All source code and documentation for Phovea is hosted on [Github](https://github.com/phovea).
 Projects built with Phovea can be found in the distinct [Caleydo](https://github.com/caleydo)
-organization on Github. If you haven't used git itself before, please read through 
+organization on Github. If you haven't used git itself before, please read through
 [this tutorial](https://git-scm.com/docs/gittutorial),
 or try this [interactive one](https://try.github.io/).
 
@@ -75,10 +75,10 @@ issue reports all use [Markdown](https://guides.github.com/features/mastering-ma
 Although HTML can be used within Markdown, it is usually not a good idea.
 
 This documentation is hosted by the [Github pages](https://pages.github.com/) platform: Beyond the
-basic Markdown, [Jekyll](https://jekyllrb.com/) and 
-[Liquid Templates](http://shopify.github.io/liquid/basics/introduction/) are used to create a 
-complete site. If you are just contributing documentation, these details won't matter, except for 
-one gotcha: New pages must include YAML front matter if they are to be recognized by Jekyll. 
+basic Markdown, [Jekyll](https://jekyllrb.com/) and
+[Liquid Templates](http://shopify.github.io/liquid/basics/introduction/) are used to create a
+complete site. If you are just contributing documentation, these details won't matter, except for
+one gotcha: New pages must include YAML front matter if they are to be recognized by Jekyll.
 At the top of each file there should be lines like this:
 
 ```
@@ -128,9 +128,9 @@ When you push changes to Github, tests can automatically be run with
 two things are necessary:
 
 - Enable the tests by flipping the switch for your repo on https://travis-ci.org/profile/phovea,
-or the appropriate list for your organization. (Click the "resync" button if it is not on the 
+or the appropriate list for your organization. (Click the "resync" button if it is not on the
 list at first.)
-- Add a travis.yml to indicate what tests should be run.
+- Add a `travis.yml` to indicate what tests should be run.
 
 Anything that can return either a zero (success) or non-zero (failure) status can be part of your
 tests, but typically unit tests will be written with [Jasmine](https://jasmine.github.io/) and run

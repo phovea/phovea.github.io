@@ -60,21 +60,43 @@ yo phovea:update
 Use a workspace
 --------------------
 
-A workspace helps if you are developing multiple plugins at the same time 
-and working with server side plugins using [Vagrant](https://www.vagrantup.com). 
+If you are developing multiple plugins at the same time a "workspace"
+using [Docker](https://www.docker.com/) and 
+[Docker Compose](https://www.docker.com/products/docker-compose)
+can make the process easier. Creating a workspace this way also generates a PyCharm project.
 The basic idea is to use the parent directory of the plugins, so that they can
-share a common npm installation and vagrant setup.
+share a common npm installation and docker setup.
+
+Make sure you have NPM, Yeoman, [Docker](https://docs.docker.com/engine/installation/)
+and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 
 ```
 mkdir workspace
 cd workspace
-# initialize/clone/resolve plugins
+
+git clone https://github.com/phovea/phovea_server.git
+# AND/OR clone any other repos that you will need. 
+yo phovea:resolve
+
 yo phovea:workspace
 npm install
-vagrant up
+docker-compose up
 ```
 
-### Launch a Phovea application/service
+To add other Phovea plugins, halt Docker by hitting ctrl-C, and then:
+
+```
+# For example, if you want to support interactions with a SQL database:
+git clone git@github.com:phovea/phovea_data_sql.git
+yo phovea:resolve
+
+yo phovea:workspace
+npm install
+docker-compose build api
+docker-compose up
+```
+
+### Launch a Phovea application
 
 ```
 npm run start:name_of_application
@@ -85,15 +107,6 @@ npm run start:name_of_application
 ```
 cd workspace
 yo phovea:clone
-```
-
-### Resolve dependencies of plugin
-
-i.e., clone the plugins dependencies into the workspace
-
-```
-cd workspace
-yo phovea:resolve
 ```
 
 ### For Each
