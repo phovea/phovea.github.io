@@ -56,9 +56,23 @@ and [Docker Compose](https://docs.docker.com/compose/install/) installed.
 ```
 mkdir workspace
 cd workspace
-# initialize/clone/resolve plugins
+
+git clone https://github.com/phovea/phovea_server.git
+# AND/OR clone any other repos that you will need. 
+
 yo phovea:workspace
 npm install
+docker-compose up
+```
+
+If you realize other Phovea plugins are necessary, halt Docker by hitting ctrl-C, and then:
+
+```
+# For example, if you want to support interactions with a SQL database:
+git clone git@github.com:phovea/phovea_data_sql.git
+yo phovea:workspace
+npm install
+docker-compose build api
 docker-compose up
 ```
 
