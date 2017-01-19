@@ -1,3 +1,9 @@
+---
+layout: documentation
+title:  Getting Started
+order: 2
+---
+
 #Getting Started With Phovea Applications*
 
 *(the examples below are all for client-side only applications. While I don' anticipate the server side components add too much complexity, keep that in mind when venturing outside of the scope of these examples).
