@@ -58,7 +58,7 @@ to update all the repos in your workspace.
 ### Direct, non-workspace, Approach 
 
 
-####Installing 
+#### Installing 
 
 ```
 $ git clone https://github.com/Caleydo/genealogyVIS.git`
