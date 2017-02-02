@@ -6,20 +6,20 @@ order: 2
 
 # PyCharm debugging
 
-In order to debug the server using PyCharm you need to do two things: 
+In order to debug the server using PyCharm you need to do two things:
 
 ## Prepare environment
 
 Restart docker with the debug mixin
 
 ```
-docker-compose -f docker-compose.yml -f docker-compose-debug.yml up
+./docker-compose.debug up
 ```
- 
+
 ## Create new remote Python interpreter
 
 1. Within PyCharm go to Settings -> Project Interpreter -> Cogs symbol -> Add Remote...
-1. Select SSH-Credentials and use the following values: 
+1. Select SSH-Credentials and use the following values:
  * Host: `localhost`
  * Port: `2222`
  * User name: `root`

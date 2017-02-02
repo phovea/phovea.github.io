@@ -58,10 +58,10 @@ yo phovea:update
 ```
 
 Use a workspace
---------------------
+---------------
 
 If you are developing multiple plugins at the same time a "workspace"
-using [Docker](https://www.docker.com/) and 
+using [Docker](https://www.docker.com/) and
 [Docker Compose](https://www.docker.com/products/docker-compose)
 can make the process easier. Creating a workspace this way also generates a PyCharm project.
 The basic idea is to use the parent directory of the plugins, so that they can
@@ -75,7 +75,7 @@ mkdir workspace
 cd workspace
 
 git clone https://github.com/phovea/phovea_server.git
-# AND/OR clone any other repos that you will need. 
+# AND/OR clone any other repos that you will need.
 yo phovea:resolve
 
 yo phovea:workspace
@@ -118,12 +118,11 @@ cd workspace
 ./forEach git pull
 ```
 
-Migration
----------
+Setup workspace from product definition
+---------------------------------------
 
-The wizard guides you through the different steps for migrating a Caleydo plugin to Phovea.
+The generator contains a special command to setup a workspace based on a Phovea product definition. This will clone all the repositories, download data packages, install dependencies, and build docker for you. By convention, product definition repositories are ending with the `_product` suffix. For example, setting up the workspace for TaCo:
 
 ```
-cd some_directory
-yo phovea:migrate-wizard
+yo phovea:setup-workspace taco_product
 ```
