@@ -3,7 +3,7 @@ layout: documentation
 title:  Architecture
 ---
 
-In Phovea, all components are [plugins](/contributors/plugins/). 
+In Phovea, all components are plugins. 
 The client code is written in TypeScript (transpiled to JavaScript)
 and uses HTML5 APIs, 
 while the server is implemented in Python and uses the 
