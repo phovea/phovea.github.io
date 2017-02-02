@@ -58,7 +58,7 @@ Another way to access datasets is to use the **list** method from `phovea_core/d
 
 ## Data Structures
 
-All data structures are part of the [core plugin](https://github.com/phovea/phovea_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*. 
+All data structures are part of the [core plugin](https://github.com/phovea/phovea_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*.
 
 ### Matrix
 
@@ -118,7 +118,7 @@ Methods to access the data make use of range (todo) parameters to specify a subs
 * `colIds(range)` Returns a promise to the column ids specified as range.
 * `view(range)` Returns a view on the matrix, which can be used like a matrix object, but only consists of the subset specified by the range parameter.
 
-Example: 
+Example:
 
 ```javascript
 
@@ -155,7 +155,7 @@ This is how the definition of a table file could look like:
   {
     "name": "Test Heterogeneous 10x4",
     "path": "test_h10x4.csv",
-    "id": "test_h10x4"
+    "id": "test_h10x4",
     "size": [10, 4],
     "type": "table",
     "idtype": "patient",
@@ -208,14 +208,15 @@ Tables in Phovea are implementations of the [ITable](http://caleydo.gehlenborg.c
 
 data.get('test_h10x4').then(function (table) {
 
-  Promise.all([table.data(), table.cols()).then(function (promise) {
+  Promise.all([table.data(), table.cols()]).then(function (promise) {
 
     console.log("All table data: " + promise[0].toString());
     var firstColumnVector = promise[1][0];
-    
+
     firstColumnVector.data().then(function(vectorData){
       console.log("Data of first Column: " + promise[0].toString());
     });
+  });
 });
 
 ```
@@ -226,9 +227,9 @@ A vector is a data structure that associates an id with a single attribute value
 
 
 | ID        | Value        |
-| :-------------: |:-------------:| 
+| :-------------: |:-------------:|
 | Patient 1     | 0.3 |
-| Patient 2     | 1.0      | 
+| Patient 2     | 1.0      |
 | Patient 3 | 0.8   |
 | Patient 4 | 0.4   |
 | Patient 5 | 0.6   |
@@ -260,9 +261,9 @@ Vectors implement the [IVector](http://data.caleydo.org/builds/lib/docs/interfac
 ### Stratification
 
 | ID        | Group        |
-| :-------------: |:-------------:| 
+| :-------------: |:-------------:|
 | Patient 1     | one |
-| Patient 2     | two      | 
+| Patient 2     | two      |
 | Patient 3 | one   |
 | Patient 4 | two   |
 | Patient 5 | two   |
@@ -288,7 +289,7 @@ Vectors implement the [IVector](http://data.caleydo.org/builds/lib/docs/interfac
       "size": 3
     }
   ],
-  
+
   "ws": "random"
 }
 ```
@@ -324,30 +325,30 @@ Datatypes
 ---------
 Datatypes are just a specific plugin type implementing a minimal interface `datatypes.IDataType`
 
-basic principles: 
- * *metadata* 
+basic principles:
+ * *metadata*
 
    the description contains the most important meta data (types, dimensions, value types, ranges,...)
 
- * *subsetting/views* 
+ * *subsetting/views*
 
    subsetting a matrix/vector results in another matrix/vector. e.g. a taking just the first half of vector is just another vector, the visualization doesn't have to even know that. A subset is just a special view on the raw data no data is copied unless needed
 
  * *ids and annotations*
 
-   every annotation (e.g. gene symbol EGFR) is assigned a unique integer id on the sever side (e.g. 5). ids are used for selection since they are more efficient to handle than strings. Actually the ids of a dataset are accessible as a multi-dimensional `range`. 
+   every annotation (e.g. gene symbol EGFR) is assigned a unique integer id on the sever side (e.g. 5). ids are used for selection since they are more efficient to handle than strings. Actually the ids of a dataset are accessible as a multi-dimensional `range`.
 
- * *selection work in the dataset domain* 
-   a visualization just selects data within its dataset. e.g. the first row/column is selected nothing more. Similarly the (global) selections are converted to the dataset domain. e.g. the vis will be notified that rows 1 to 3 are selected. Internally the row indices are converted to their corresponding unique id numbers and these are selected within the idtype. 
+ * *selection work in the dataset domain*
+   a visualization just selects data within its dataset. e.g. the first row/column is selected nothing more. Similarly the (global) selections are converted to the dataset domain. e.g. the vis will be notified that rows 1 to 3 are selected. Internally the row indices are converted to their corresponding unique id numbers and these are selected within the idtype.
 
 server side principles
 
  * datastores
 
-   datastores are plugins that support different types of storage. current ones https://github.com/phovea/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/phovea/phovea_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets. 
+   datastores are plugins that support different types of storage. current ones https://github.com/phovea/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/phovea/phovea_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets.
 
  * numpy
-   
+
    matrixes and vectors are accessible as numpy arrays. ranges support conversions to numpy selectors
 
  * TODO: filter, selection, query
