@@ -17,8 +17,8 @@ Client and server communicate via REST and Websocket interfaces.
 1. Provides datatypes and basic visualization for genomic data.
 2. Provides infrastructure for ​managing data, synchronizing views (event handling), and tracking user actions (provenance tracking).
 3. Can be used as client-only Javascript library or a coupled client-server system.
-4. Client-side code is written in Typescript (static typing, class and module support, ES6 support, etc...)
-5. Server-side code is written in Python (Flask framework)
+4. Client-side code is written in Typescript (static typing, class and module support, ES6 support, etc...).
+5. Server-side code is written in Python (Flask framework).
 
 
 ## Core Phovea Repositories and what they provide
@@ -26,8 +26,8 @@ Client and server communicate via REST and Websocket interfaces.
 
 1. Phovea Core - data structures and events
 2. Phovea Vis - basic visualizations
-3. Phovea Clue - Provenance graphs (uses graph data type)
-4. Phovea UI - User Interface elements (fonts, headers,etc)
+3. Phovea Clue - provenance graphs (uses graph data type)
+4. Phovea UI - user interface elements (fonts, headers,etc)
 
 
 ## Phovea Components
@@ -36,10 +36,11 @@ Client and server communicate via REST and Websocket interfaces.
 ### App or Plugin? 
 
 An app is a special type of plugin that:
+
 * has index.html
 * has its own user interface (app.ts)
 
-An app or plugin is developed in its own repo 
+An app or plugin is developed in its own repo .
 
 Example Apps: LineUp, TACO
 Example Plugin: Importer
@@ -47,7 +48,7 @@ Example Plugin: Importer
 ### Extension or Typescript Module?  
 
 Both extension and typescript modules are smaller reusable components that can be used by one or more apps. 
-They also don't have their own repos (single .ts file)
+They also don't have their own repos (single .ts file).
 
 ​​Extensions are special kinds of typescript modules​ and tend to be used by multiple apps while ts modules are typically only used by their own application.
 
@@ -118,30 +119,30 @@ All data structures take as input data in the format described by the IDataDescr
 
 ```
 /**
-    * basic description elements
+ * basic description elements
+ */
+ export interface IDataDescription {
+   /**
+    * the unique id
     */
-   export interface IDataDescription {
-     /**
-      * the unique id
-      */
-     id: string;
-     /**
-      * the type of the datatype, e.g. matrix, vector, stratification, ...
-      */
-     type: string;
-   
-     /**
-      * the name of the dataset
-      */
-     name: string;
-     /**
-      * a fully qualified name, e.g. project_name/name
-      */
-     fqname: string;
-   
-     [extras: string]: any;
-   }
-   ```
+   id: string;
+   /**
+    * the type of the datatype, e.g. matrix, vector, stratification, ...
+    */
+   type: string;
+    
+   /**
+    * the name of the dataset
+    */
+   name: string;
+   /**
+    * a fully qualified name, e.g. project_name/name
+    */
+   fqname: string;
+    
+   [extras: string]: any;
+}
+```
    
    
 ### Phovea Visualizations
