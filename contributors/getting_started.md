@@ -6,28 +6,23 @@ order: 2
 
 ## Getting Started With Phovea Applications
 
-*The examples below are all for client-side only applications. While I don' anticipate the server side components add too much complexity, keep that in mind when venturing outside of the scope of these examples.*
+*The examples below are all for client-side only applications. While I don't anticipate the server side components add too much complexity, keep that in mind when venturing outside of the scope of these examples.*
 
 There are two ways of getting a Phovea Application up and running:
 
  1.Clone an existing app and run it locally on your machine. 
  2.Create a new one from scratch
 
-
 We will start with cloning an existing application as this will help you understand where all the pieces go and where/how you should write you code when writing your own application.
 
 ## Cloning and building an existing Phovea Application
 
-
 *examples below use the genealogyVIS application but can be use for any existing phovea application*
-
 
 There are two ways to set up an existing Phovea App
 
-
  1. Create a new directory (this will avoid dependency conflicts with other tools), clone  one ore more app repositories, create a workspace, install and run the application from the workspace 
  2. Clone an app repository, install, build (optional), and run according to the instruction in the repo readme 
-
 
 *The first approach (creating a workspace) is particularly useful when developing multiple plugins, as all the projects within the workspace will share a common npm installation and docker setup.* 
 
@@ -88,9 +83,9 @@ Unlike `npm run build`, `npm run start` will just build the application *in memo
 
 #### Notes on using javascript files in a Phovea App
 
-Phovea ignores *.js files on commit. since typescript is a superset of javascript it's safe to rename js to ts files. the only thing you have to take care about is the import and export, since each file is a separate module/file.
+Phovea ignores *.js files on commit. since typescript is a superset of javascript it's safe to rename js to ts files. The only thing you have to take care about is the import and export, since each file is a separate module/file.
 
-The need for import and export is because with typsecript you can't use the global scope and every file has his own scope. You need to declare what should be exported/imported
+The need for import and export is because with typsecript you can't use the global scope and every file has his own scope. You need to declare what should be exported/imported.
 
 Now that you have successfully (hopefully) cloned and examined an existing application, you'e ready to build your own application!
 
