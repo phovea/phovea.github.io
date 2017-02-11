@@ -144,12 +144,14 @@ Clone and resolve the `phovea_server` as follows:
 ### Installing
 
 Keep Docker running.
+
 1. `npm install`
 2. `docker-compose build`
 
 ### Launching
 
 Keep Docker running.
+
 1. `docker-compose up -d`
 2. `npm run start:app`
 
