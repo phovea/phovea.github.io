@@ -123,18 +123,21 @@ The build process itself includes:
  3. `cd app_folder`
  
 Create the client side as follows:
+
 4. `mkdir app`
 5. `cd app`
 6. Run` yo phovea:init-app` and follow the prompts. 
 7. `cd ..`
 
 Create the server side as follows:
+
 8. `mkdir app_server`
 9. `cd app_server`
 10. Run `yo phovea:init-slib` and follow the prompts
 11. `cd ..`
 
 Clone and resolve the `phovea_server` as follows:
+
 12. Run `yo phovea:clone phovea_server` and follow the prompts.
 13. `yo phovea:workspace`
 
