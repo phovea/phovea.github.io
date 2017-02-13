@@ -46,8 +46,10 @@ workspace --> has the helper/docker files but is not attached to any repo
 ```
 
 If you have several repos in your workspace, you can run: 
+
 1. forEach git pull or 
 2. forEach git push  
+
 to update all the repos in your workspace. 
 
 ### Direct, non-workspace, Approach 
