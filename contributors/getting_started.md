@@ -10,11 +10,15 @@ order: 2
 
 There are two ways of getting a Phovea Application up and running:
 
- 1. Clone an existing app and run it locally on your machine.
- 2. Create a new one from scratch
+ 1. [Clone an existing app](#clone-existing-app) and run it locally on your machine
+ 2. [Create a new client application](#client-app) from scratch
+ 3. [Create a new server-client application](#server-client-app) from scratch
 
 We will start with cloning an existing application as this will help you understand where all the pieces go and where/how you should write you code when writing your own application.
 
+---
+
+<a id="clone-existing-app"></a>
 ## Cloning and building an existing Phovea Application
 
 *examples below use the [genealogyVIS](https://github.com/Caleydo/genealogyVIS/) application but can be use for any existing Phovea application*
@@ -35,7 +39,7 @@ There are two ways to set up an existing Phovea App
  4. Create workspace `yo phovea:workspace`
  5. Install dependencies `npm install`
  6. Run application `npm run start:genealogyVIS`
- 7. Open browser and navigate to http://localhost:8080/
+ 7. Open browser and navigate to `http://localhost:8080/`
 
 Your directory structure (for one or more projects) will look like this:
 
@@ -79,6 +83,7 @@ The build process itself includes:
 
 
 #### Launching
+
 `npm run start`
 
 Unlike `npm run build`, `npm run start` will just build the application *in memory* without any tests or code quality checks
@@ -92,7 +97,10 @@ The need for import and export is because with TypeScript (and ES6 in general) y
 
 Now that you have successfully (hopefully) cloned and examined an existing application, you are ready to build your own application!
 
-## Creating a new Phovea Application from Scratch
+---
+
+<a id="client-app"></a>
+## Creating a new Phovea Client Application from Scratch
 
  1. Install Phovea Generator `sudo npm install -g yo github:phovea/generator-phovea`
  2. `mkdir name_of_new_app`
@@ -101,10 +109,15 @@ Now that you have successfully (hopefully) cloned and examined an existing appli
 
 ### Installing
 
-`npm install`
+```bash
+npm install
+```
 
 ### Building (optional)
-`npm run build`
+
+```bash
+npm run build
+```
 
 The build step is optional since it is not required for testing/development. 
 
@@ -116,8 +129,14 @@ The build process itself includes:
 
 ### Launching
 
-`npm start`
+```bash
+npm start
+```
 
+
+---
+
+<a id="server-client-app"></a>
 ## Creating a new Phovea Server-Client Application from Scratch
 
  1. Install [Docker](https://www.docker.com/).
@@ -158,7 +177,7 @@ Keep Docker running.
 1. `docker-compose up -d`
 2. `npm run start:app`
 
-Now in the browser check adress `http://localhost:8080/` for accessing the app or `http://localhost:8080/api/hello_world/` for accessing the api.
+Now in the browser check adress `http://localhost:8080/` for accessing the app or `http://localhost:8080/api/hello_world/` for accessing the API.
 
 
 
