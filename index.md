@@ -9,7 +9,7 @@ Phovea provides datatypes and basic visualization for genomic data, and it provi
 infrastructure for managing data, synchronizing views, and tracking user actions.
 
 
-All core client-side code in Phovea is written as Typescript, which helps avoid errors which
+All core client-side code in Phovea is written as TypeScript, which helps avoid errors which
 loosely-typed Javascript is prone to. Server-side code is written in the light-weight Flask framework
 for Python.
 
