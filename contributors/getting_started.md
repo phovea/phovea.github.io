@@ -10,8 +10,8 @@ order: 2
 
 There are two ways of getting a Phovea Application up and running:
 
- 1.Clone an existing app and run it locally on your machine. 
- 2.Create a new one from scratch
+ 1. Clone an existing app and run it locally on your machine.
+ 2. Create a new one from scratch
 
 We will start with cloning an existing application as this will help you understand where all the pieces go and where/how you should write you code when writing your own application.
 
