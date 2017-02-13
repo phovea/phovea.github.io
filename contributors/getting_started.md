@@ -11,8 +11,7 @@ order: 2
 There are two ways of getting a Phovea Application up and running:
 
  1. [Clone an existing app](#clone-existing-app) and run it locally on your machine
- 2. [Create a new client application](#client-app) from scratch
- 3. [Create a new server-client application](#server-client-app) from scratch
+ 2. Create a new [client application](#client-app) or [server-client application](#server-client-app) from scratch
 
 We will start with cloning an existing application as this will help you understand where all the pieces go and where/how you should write you code when writing your own application.
 
@@ -21,7 +20,7 @@ We will start with cloning an existing application as this will help you underst
 <a id="clone-existing-app"></a>
 ## Cloning and building an existing Phovea Application
 
-*examples below use the [genealogyVIS](https://github.com/Caleydo/genealogyVIS/) application but can be use for any existing Phovea application*
+*Examples below use the [genealogyVIS](https://github.com/Caleydo/genealogyVIS/) application but can be use for any existing Phovea application*
 
 There are two ways to set up an existing Phovea App
 
