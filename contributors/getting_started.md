@@ -24,10 +24,10 @@ There are two ways to set up an existing Phovea App
  1. Create a new directory (this will avoid dependency conflicts with other tools), clone  one ore more app repositories, create a workspace, install and run the application from the workspace 
  2. Clone an app repository, install, build (optional), and run according to the instruction in the repo readme 
 
-*The first approach (creating a workspace) is particularly useful when developing multiple plugins, as all the projects within the workspace will share a common npm installation and docker setup.* 
+*The first approach (creating a workspace) is particularly useful when developing multiple plugins, as all the projects within the workspace will share a common npm installation and Docker setup.* 
 
 ### Workspace Approach 
-*This approach creates a ''workspace'' which uses Docker and Docker Compose. The workspace setup also creates a Pycharm project.* 
+*This approach creates a ''workspace'' which uses [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/). The workspace setup also creates a [PyCharm](https://www.jetbrains.com/pycharm/) project.* 
 
  1. `mkdir workspace`
  2. `cd workspace`
