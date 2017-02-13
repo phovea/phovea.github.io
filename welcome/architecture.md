@@ -15,9 +15,9 @@ Client and server communicate via REST and Websocket interfaces.
 ## What Phovea can do for you
 
 1. Provides datatypes and basic visualization for genomic data.
-2. Provides infrastructure for ​managing data, synchronizing views (event handling), and tracking user actions (provenance tracking).
+2. Provides infrastructure for managing data, synchronizing views (event handling), and tracking user actions (provenance tracking).
 3. Can be used as client-only Javascript library or a coupled client-server system.
-4. Client-side code is written in Typescript (static typing, class and module support, ES6 support, etc...).
+4. Client-side code is written in TypeScript (static typing, class and module support, ES6 support, etc...).
 5. Server-side code is written in Python (Flask framework).
 
 
@@ -45,12 +45,12 @@ An app or plugin is developed in its own repo .
 Example Apps: LineUp, TACO
 Example Plugin: Importer
 
-### Extension or Typescript Module?  
+### Extension or TypeScript Module?  
 
-Both extension and typescript modules are smaller reusable components that can be used by one or more apps. 
+Both extension and TypeScript modules are smaller reusable components that can be used by one or more apps. 
 They also don't have their own repos (single .ts file).
 
-​​Extensions are special kinds of typescript modules​ and tend to be used by multiple apps while ts modules are typically only used by their own application.
+Extensions are special kinds of TypeScript modules and tend to be used by multiple apps while ts modules are typically only used by their own application.
 
 ### TypeScript Modules
 
