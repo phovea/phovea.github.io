@@ -99,7 +99,7 @@ We are using NPM's [`package.json`](https://docs.npmjs.com/files/package.json)
 to manage dependencies between components. Note, however, that we are *not* really using the Node.js
 language, nor the central NPM repository.
 
-New projects can be created with [Yeoman](http://yeoman.io/) generators.
+New projects can be created with the [Phovea Generator](https://github.com/phovea/generator-phovea/) that is a [Yeoman](http://yeoman.io/) generators.
 See our [cheatsheet](/contributors/cheatsheet/) for more details.
 
 ## Server
@@ -108,8 +108,8 @@ Server-side code uses the Python [Flask](http://flask.pocoo.org/) framework.
 
 ## Client
 
-Client-side code is written in [Typescript](https://www.typescriptlang.org/) and then compiled down
-to Javascript. Typescript adds a typesystem to Javascript, and also lets you use features of the newest
+Client-side code is written in [TypeScript](https://www.typescriptlang.org/) and then compiled down
+to Javascript. TypeScript adds a typesystem to Javascript, and also lets you use features of the newest
 versions of the ECMAScript even on older browsers.  As part of the build process, multiple libraries
 are combined using [Webpack](https://webpack.github.io/).
 
