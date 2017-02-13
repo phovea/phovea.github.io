@@ -88,9 +88,9 @@ Unlike `npm run build`, `npm run start` will just build the application *in memo
 
 Phovea ignores \*.js files on commit. since TypeScript is a superset of javascript it's safe to rename \*.js to \*.ts files. The only thing you have to take care about is the import and export, since each file is a separate module/file.
 
-The need for import and export is because with TypeScript you cannot use the global scope and every file has his own scope. You need to declare what should be exported/imported. 
+The need for import and export is because with TypeScript (and ES6 in general) you cannot use the global scope and every file has his own scope. You need to declare what variables and functions should be exported/imported. Follow the links to learn more about [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) and [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import).
 
-Now that you have successfully (hopefully) cloned and examined an existing application, you'e ready to build your own application!
+Now that you have successfully (hopefully) cloned and examined an existing application, you are ready to build your own application!
 
 ## Creating a new Phovea Application from Scratch
 
