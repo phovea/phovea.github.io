@@ -17,7 +17,7 @@ We will start with cloning an existing application as this will help you underst
 
 ## Cloning and building an existing Phovea Application
 
-*examples below use the genealogyVIS application but can be use for any existing phovea application*
+*examples below use the [genealogyVIS](https://github.com/Caleydo/genealogyVIS/) application but can be use for any existing Phovea application*
 
 There are two ways to set up an existing Phovea App
 
