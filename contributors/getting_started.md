@@ -57,13 +57,14 @@ to update all the repos in your workspace.
 
 #### Installing 
 
-```
-$ git clone https://github.com/Caleydo/genealogyVIS.git`
+```bash
+$ git clone https://github.com/Caleydo/genealogyVIS.git
 $ cd genealogy_vis
 $ npm install
 ```
 
 #### Building (optional)
+
 ```bash
 $ npm run build
 ```
@@ -74,7 +75,7 @@ The build process is optional because it is not required in order to run the app
 The build process itself includes:
 * running all unit tests -> karma
 * checking code quality -> tslint
-* building the application in production mode (i.e, creates compiled, minified and chunked javascript files that can be loaded using webpack https://webpack.js.org)  == ready to be deployed
+* building the application in production mode (i.e, creates compiled, minified and chunked javascript files that can be loaded using [Webpack](https://webpack.js.org)) == ready to be deployed
 
 
 #### Launching
@@ -85,9 +86,9 @@ Unlike `npm run build`, `npm run start` will just build the application *in memo
 
 #### Notes on using javascript files in a Phovea App
 
-Phovea ignores *.js files on commit. since typescript is a superset of javascript it's safe to rename js to ts files. The only thing you have to take care about is the import and export, since each file is a separate module/file.
+Phovea ignores \*.js files on commit. since TypeScript is a superset of javascript it's safe to rename \*.js to \*.ts files. The only thing you have to take care about is the import and export, since each file is a separate module/file.
 
-The need for import and export is because with typsecript you can't use the global scope and every file has his own scope. You need to declare what should be exported/imported.
+The need for import and export is because with TypeScript you cannot use the global scope and every file has his own scope. You need to declare what should be exported/imported. 
 
 Now that you have successfully (hopefully) cloned and examined an existing application, you'e ready to build your own application!
 
