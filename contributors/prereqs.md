@@ -12,6 +12,57 @@ or adding an extra wheel.
 - Understanding the idioms of the tool you're working with will make your code more clear
 to future developers.
 
+## Technologies and Tools used in Phovea
+
+### Programming Languages
+
+**Client**
+
+* [TypeScript 2](http://www.typescriptlang.org/)
+* [SASS](http://sass-lang.com/)
+
+**Server**
+
+* [Python](https://python.org)
+
+### Frameworks / Libraries
+
+**[Phovea Generator](https://github.com/phovea/generator-phovea)**
+
+* yeoman
+
+**Client**
+
+* [D3](https://d3js.org)
+* [Font Awesome](http://fontawesome.io/)
+* [Bootstrap 3](http://getbootstrap.com/)
+* [Jasmine](https://jasmine.github.io/) for testing
+* Now and then: [LineUp.js](https://github.com/Caleydo/lineupjs), [Papa Parse](http://papaparse.com/), [jQuery](https://jquery.org) [select2](https://github.com/select2/select2), [moment](http://momentjs.com/), [lodash](https://lodash.com/docs), ...
+
+**Server**
+
+* [flask](http://flask.pocoo.org/)
+* [pytest](http://docs.pytest.org/en/latest/) for testing
+* Now and then: [numpy](http://www.numpy.org/), [pandas](http://pandas.pydata.org/), [Requests](http://docs.python-requests.org/en/master/), [Celery](http://www.celeryproject.org/), [LDAP](https://www.python-ldap.org/), ...
+
+
+### Data Stores
+
+* [Redis](https://redis.io/)
+* [MongoDB](https://www.mongodb.com/)
+* [Hierarchical Data Format](https://www.hdfgroup.org/) (HDF)
+* [SQLAlchemy](http://www.sqlalchemy.org/) -> [PostgreSQL](https://www.postgresql.org/), [SQlite](https://sqlite.org/), [MySQL](https://www.mysql.com/)
+* [Neo4j](https://neo4j.com)
+
+### Build Tools
+
+* [Webpack 2](https://webpack.js.org/)
+* [Karma Test Runner](https://karma-runner.github.io/)
+* [pytest runner](https://pypi.python.org/pypi/pytest-runner)
+* [Python setuptools](https://pypi.python.org/pypi/setuptools)
+* [Travis CI](https://travis-ci.org/)
+
+
 ## Version Control
 
 All source code and documentation for Phovea is hosted on [Github](https://github.com/phovea).
