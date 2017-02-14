@@ -95,22 +95,21 @@ than committing to master: This gives the system time to do a basic syntax check
 
 ## Packaging
 
-We are using NPM's [`package.json`](https://docs.npmjs.com/files/package.json)
-to manage dependencies between components. Note, however, that we are *not* really using the Node.js
-language, nor the central NPM repository.
+We are using NPM's [`package.json`](https://docs.npmjs.com/files/package.json) to manage dependencies between components and external (web) libraries. Phovea plugins can be published to the NPM registry. Note, however, that we are *not* really using the Node.js
+language.
 
 New projects can be created with the [Phovea Generator](https://github.com/phovea/generator-phovea/) that is a [Yeoman](http://yeoman.io/) generators.
 See our [cheatsheet](/contributors/cheatsheet/) for more details.
 
 ## Server
 
-Server-side code uses the Python [Flask](http://flask.pocoo.org/) framework.
+Server-side plugins use the Python [Flask](http://flask.pocoo.org/) framework. However, if these plugins register namespaces any WSGI compliant Python framework could be used.
 
 ## Client
 
 Client-side code is written in [TypeScript](https://www.typescriptlang.org/) and then compiled down
 to Javascript. TypeScript adds a typesystem to Javascript, and also lets you use features of the newest
-versions of the ECMAScript even on older browsers.  As part of the build process, multiple libraries
+versions of the ECMAScript even on older browsers.  As part of the build process, multiple libraries and assets
 are combined using [Webpack](https://webpack.github.io/).
 
 The visualizations in Phovea are created with [D3](https://github.com/d3/d3/wiki).
@@ -132,6 +131,6 @@ or the appropriate list for your organization. (Click the "resync" button if it 
 list at first.)
 - Add a `travis.yml` to indicate what tests should be run.
 
-Anything that can return either a zero (success) or non-zero (failure) status can be part of your
+Any program or script that can return either a zero (success) or non-zero (failure) status can be part of your
 tests, but typically unit tests will be written with [Jasmine](https://jasmine.github.io/) and run
 with the [Karma test runner](https://karma-runner.github.io/).
