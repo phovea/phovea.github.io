@@ -123,7 +123,6 @@ Follow theses steps only, if you cannot find a suitable Phovea plugin (using the
 
 ### Stand-alone setup
 
-1. Run `yo phovea:resolve` to clone dependent plugins
-2. Run `npm install` to install new npm dependencies
+1. Run `npm install` to install new npm dependencies
 
 
