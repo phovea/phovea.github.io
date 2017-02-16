@@ -22,7 +22,7 @@ A client-side dependency can be another Phovea module or a JavaScript library av
 5. Select *additional libraries* (e.g., jQuery, D3) that are known by the Phovea framwork
 6. Confirm your selection with Enter
 7. Override files if you will be asked to
-8. (Optional, but recommended: Commit the changes to your application / plugin repository)
+8. (Optional, but recommended: Commit the changes)
 9. [Update your setup](#update-setup)
 
 <a id="add-external-libs"></a>
@@ -43,7 +43,8 @@ Follow theses steps only, if you cannot find the library in the known libraries 
   },
   ```
    
-5. [Update your setup](#update-setup)
+5. (Optional, but recommended: Commit the changes)
+6. [Update your setup](#update-setup)
 
 
 ### Version conflicts with D3 (v3 vs. v4)
@@ -80,7 +81,7 @@ A server-side dependency can be another Phovea module or pip package available o
 5. Select *additional libraries* (e.g., MongoDB, Redis) that are known by the Phovea framwork
 6. Confirm your selection with Enter
 7. Override files if you will be asked to
-8. (Optional, but recommended: Commit the changes to your application / plugin repository)
+8. (Optional, but recommended: Commit the changes)
 9. [Update your setup](#update-setup)
 
 
@@ -89,22 +90,16 @@ A server-side dependency can be another Phovea module or pip package available o
 Follow theses steps only, if you cannot find a suitable Phovea plugin (using the Phovea generator in the step above).
 
 1. Navigate to the server library directory
-2. Open the *.yo-rc.json*
-3. Add the pip dependencies and version to the `requirements` object and save the file. For example:
+2. Open the *requirements.txt*
+3. Add the pip dependencies and version (one per line) as follows:
    
-  ```json
-  "unknown": {
-    "requirements": [
-      "ujson==1.33"
-    ]
-  },
   ```
- 
-4. Open a command line and run `yo phovea:update` (in the server library directory) 
-   -> this will re-generate the necessary files (such as `requirements.txt`).
-5. Override files if you will be asked to
-6. (Optional, but recommended: If any files have changed, commit them with the commit message `yo phovea:update`)
-7. [Update your setup](#update-setup)
+  ujson==1.33
+  enum==0.4.6
+  ```
+  
+4. (Optional, but recommended: Commit the changes)
+5. [Update your setup](#update-setup)
 
 -----
 
