@@ -101,6 +101,8 @@ Follow theses steps only, if you cannot find a suitable Phovea plugin (using the
 4. (Optional, but recommended: Commit the changes)
 5. [Update your setup](#update-setup)
 
+**NOTE:** A bug ([addressed in this issue](https://github.com/phovea/generator-phovea/issues/81)) in the Phovea generator is overriding changes made to the *requirements.txt* when running `yo phovea:update`. You have to restore the modifications manually until the bug is fixed.
+
 -----
 
 <a id="update-setup"></a>
