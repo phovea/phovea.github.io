@@ -72,7 +72,7 @@ import {scaleLinear} from 'd3-scale';
 
 A server-side dependency can be another Phovea module or pip package available on [PyPI Python Package Index](https://pypi.python.org/pypi).
 
-### Phovea server plugins
+### Phovea server modules and additional libraries
 
 1. Open the command line and navigate to the directory of the server library 
 2. Run `yo phovea:add-dependency`
