@@ -15,7 +15,7 @@ A client-side dependency can be another Phovea module or a JavaScript library av
 
 ### Phovea modules and additional libraries
 
-1. Open the command line and navigate to the application/plugin directory
+1. Open the command line and navigate to the plugin directory
 2. Run `yo phovea:add-dependency`
 3. Select the *additional (Phovea) modules* that should be included
 4. Confirm your selection with Enter and move the next step
