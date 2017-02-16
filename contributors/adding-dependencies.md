@@ -19,12 +19,13 @@ A client-side dependency can be another Phovea module or a JavaScript library av
 2. Run `yo phovea:add-dependency`
 3. Select the *additional (Phovea) modules* that should be included
 4. Confirm your selection with Enter and move the next step
-5. Select *additional libraries* (e.g., jQuery, d3) that are known by the Phovea framwork
+5. Select *additional libraries* (e.g., jQuery, D3) that are known by the Phovea framwork
 6. Confirm your selection with Enter
 7. Override files if you will be asked to
 8. (Optional, but recommended: Commit the changes to your application / plugin repository)
 9. [Update your setup](#update-setup)
 
+<a id="add-external-libs"></a>
 
 ### Add other external libraries
 
@@ -43,6 +44,24 @@ Follow theses steps only, if you cannot find the library in the known libraries 
   ```
    
 5. [Update your setup](#update-setup)
+
+
+### Version conflicts with D3 (v3 vs. v4)
+
+Most of the Phovea repositories (e.g., [phovea_vis](https://github.com/phovea/phovea_vis/) and [phovea_clue](https://github.com/phovea/phovea_clue)) use D3 v3. If you want to use code that uses D3 v4 add the specific D3 module (e.g., [d3-selection](https://github.com/d3/d3-selection)) and the @type dependency (as [described above](#add-external-libs)) to the *package.json*.
+
+```json
+"dependencies": {
+   "@types/d3-scale": "^1.0.4",
+   "d3-scale": "^1.0.3"
+},
+```
+
+Note, that you must import the specific D3 v4 modules to your TypeScript file as follows to avoid conflicts with the D3 v3 library:
+
+```js
+import {scaleLinear} from 'd3-scale';
+```
 
 -----
 
