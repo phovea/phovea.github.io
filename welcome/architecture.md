@@ -33,17 +33,18 @@ Client and server communicate via REST and Websocket interfaces.
 ## Phovea Components
 
 
-### App or Plugin? 
+### App vs. Plugin vs. Product vs. Extension
 
-An app is a special type of plugin that:
+* A **plugin** is a repository that can be linked during build time.
+* An **application** is a special type of plugin that 
+  * has an index.html
+  * has its own user interface (`app.ts`).
+* A **product** is a deployable configuration consisting of n plugins. It clones all dependant repositories, downloads data packages, installs dependencies, and builds docker for you.
+* An **extension** is identified by a unique ID, extension type, and the module that implements this extension. A plugin can have *(0, 1, or n) extensions.
 
-* has index.html
-* has its own user interface (app.ts)
-
-An app or plugin is developed in its own repo .
-
-Example Apps: LineUp, TACO
-Example Plugin: Importer
+Apps and plugins are developed in an own repository.
+* Example apps: LineUp, TACO
+* Example plugin: Importer
 
 ### Extension or TypeScript Module?  
 
