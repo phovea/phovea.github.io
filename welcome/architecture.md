@@ -164,26 +164,6 @@ All data structures take as input data in the format described by the IDataDescr
  * They all take a phovea data structure (described above) as input. 
 
 
-## Version Conflicts with D3 (v3 vs V4)
-
-Since most of the phovea repositories that use d3 (e.g: phovea_vis and phovea_clue) were written with v3, any contributors wishing to include code that uses d3 v4 must import the specific modules to avoid conflicts. 
-
-e.g: `import {scaleLinear} from 'd3-scale';
-;`
-
-Remember that the d3-modules you use (such as d-selection, etc.) must also be added to package.json both as a module and as an @type dependency. 
-
-e.g: 
-
-```
-"dependencies": {
-     "@types/d3-scale": "^1.0.4",
-     "d3-scale": "^1.0.3",
-     "phovea_core": "github:phovea/phovea_core#develop",
-     "phovea_ui": "github:phovea/phovea_ui#develop"
-   },
-```
-
 ## Structure of a Phovea (client side) application. 
 
 1. app.ts - starting point 
