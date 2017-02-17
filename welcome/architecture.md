@@ -69,7 +69,7 @@ Both have in common that they are small reusable components. However, the main d
 * TypeScript modules provide the possibility to group related logic, encapsulate it, structure your code and prevent pollution of the global namespace.
 * TypeScript modules can provide functionality that is only visible inside the module, and they can provide functionality that is visible from the outside using the export keyword.
 
-Learn more about [TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript documentation.
+Learn more about TypeScript modules in the [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/modules.html).
 
 ### Extensions
 
