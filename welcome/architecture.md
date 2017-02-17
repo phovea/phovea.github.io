@@ -49,10 +49,10 @@ Phovea's modular and flexible archticture requires a sub-division of functionali
 
 The list shows the main repositories that are widely used accross all applications:
 
-1. [Phovea Core](https://github.com/phovea/phovea_core/) - data structures and events
-2. [Phovea Vis](https://github.com/phovea/phovea_vis/) - basic visualizations
-4. [Phovea UI](https://github.com/phovea/phovea_ui/) - user interface elements (fonts, headers,etc)
-3. [Phovea Clue](https://github.com/phovea/phovea_clue/) - provenance graphs (UI for provenance graphs, uses graph data type)
+1. [phovea_core](https://github.com/phovea/phovea_core/) - data structures and events
+2. [phovea_vis](https://github.com/phovea/phovea_vis/) - basic visualizations
+4. [phovea_ui](https://github.com/phovea/phovea_ui/) - user interface elements (fonts, headers,etc)
+3. [phovea_clue](https://github.com/phovea/phovea_clue/) - provenance graphs (UI for provenance graphs, uses graph data type)
 
 Further repositories can be found in the [Phovea organization](https://github.com/phovea/).
 
@@ -92,8 +92,8 @@ Example of the phovea_vis/vis.ts extension being registered in the *phovea.js* f
  
 Currently there are two types of extensions:
 
-1. `datatype` ->  all the data structures provided by phovea_core 
-2. `vis` -> 'pre made' visualizations provided by phovea_vis.
+1. `datatype` -> all the data structures provided by [phovea_core](https://github.com/phovea/phovea_core/)
+2. `vis` -> 'pre made' visualizations provided by [phovea_vis](https://github.com/phovea/phovea_vis/).
 
 
 
