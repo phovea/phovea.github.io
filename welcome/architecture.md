@@ -11,7 +11,6 @@ while the server is implemented in Python and uses the
 Client and server communicate via REST and Websocket interfaces. 
 
 
-
 ## What Phovea can do for you
 
 1. Provides datatypes and basic visualization for genomic data.
@@ -21,51 +20,66 @@ Client and server communicate via REST and Websocket interfaces.
 5. Server-side code is written in Python (Flask framework).
 
 
-## Core Phovea Repositories and what they provide
-*https://githb.com/phovea*
+## Phovea Repository Types
 
-1. Phovea Core - data structures and events
-2. Phovea Vis - basic visualizations
-3. Phovea Clue - provenance graphs (uses graph data type)
-4. Phovea UI - user interface elements (fonts, headers,etc)
+Phovea's modular and flexible archticture requires a sub-division of functionality. Therefore we distribute the functionality in different repositories and distinguish between three different types:
+
+### Plugin
+
+* Is a repository that can be linked during build time
+* Contains a group of related functionalities and files
+* The repository name can be choosen freely
+* Examples: [phovea_importer](https://github.com/phovea/phovea_importer/)
+ 
+### Application
+* Is a special type of plugin 
+* Contains an *index.html* and an own user interface (*app.ts*)
+* The repository name can be choosen freely
+* Examples: [LineUp](https://github.com/Caleydo/lineup), or [TaCo](https://github.com/Caleydo/taco)
+
+### Product
+* Is a deployable configuration consisting of one or multiple plugins
+* The repository name must have the suffix *\_product*
+* Phovea can clone all dependant repositories, download data packages, install dependencies, and build Docker images
+* Tip: Use `yo phovea:setup-workspace <product>` to get started right away
+* Examples: [lineup_product](https://github.com/Caleydo/lineup_product), or [taco_product](https://github.com/Caleydo/taco_product)
 
 
-## Phovea Components
+## Core Phovea repositories (and what they provide)
+
+The list shows the main repositories that are widely used accross all applications:
+
+1. [Phovea Core](https://github.com/phovea/phovea_core/) - data structures and events
+2. [Phovea Vis](https://github.com/phovea/phovea_vis/) - basic visualizations
+4. [Phovea UI](https://github.com/phovea/phovea_ui/) - user interface elements (fonts, headers,etc)
+3. [Phovea Clue](https://github.com/phovea/phovea_clue/) - provenance graphs (UI for provenance graphs, uses graph data type)
+
+Further repositories can be found in the [Phovea organization](https://github.com/phovea/).
 
 
-### App vs. Plugin vs. Product vs. Extension
+## Phovea Client Components
 
-* A **plugin** is a repository that can be linked during build time.
-* An **application** is a special type of plugin that 
-  * has an index.html
-  * has its own user interface (`app.ts`).
-* A **product** is a deployable configuration consisting of n plugins. It clones all dependant repositories, downloads data packages, installs dependencies, and builds docker for you.
-* An **extension** is identified by a unique ID, extension type, and the module that implements this extension. A plugin can have *(0, 1, or n) extensions.
+Each repository contains a set of related files. However, *re-inventing the wheel* should be avoided and re-using existing functionalities from other repositories should be prefered. 
 
-Apps and plugins are developed in an own repository.
-* Example apps: LineUp, TACO
-* Example plugin: Importer
-
-### Extension or TypeScript Module?  
-
-Both extension and TypeScript modules are smaller reusable components that can be used by one or more apps. 
-They also don't have their own repos (single .ts file).
-
-Extensions are special kinds of TypeScript modules and tend to be used by multiple apps while ts modules are typically only used by their own application.
+In Phovea we distinguishes between **TypeScript modules** and **extensions**, which are a special kind of TypeScript modules.
+Both have in common that they are small reusable components. However, the main difference is that extensions tend to be used by multiple apps while TypeScript modules are typically only used by their own application.
 
 ### TypeScript Modules
 
-* Modules provide the possibility to group related logic, encapsulate it, structure your code and prevent pollution of the global namespace.
-* Modules can provide functionality that is only visible inside the module, and they can provide functionality that is visible from the outside using the export keyword.
+* TypeScript modules provide the possibility to group related logic, encapsulate it, structure your code and prevent pollution of the global namespace.
+* TypeScript modules can provide functionality that is only visible inside the module, and they can provide functionality that is visible from the outside using the export keyword.
+
+Learn more about [TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html) in the TypeScript documentation.
 
 ### Extensions
 
-Extensions are registered modules (phovea.js)
-*to register = to allow for import by other applications.* 
+* Extensions are are registered TypeScript modules, which means that they can be imported by other plugin.
+* An extension is identified by a unique ID, extension type, and the TypeScript module that implements this extension.
+* Exentions are optional, i.e. a plugin can have none or multiple extensions.
 
-Example of the phovea_vis/vis.ts extension being registered:
+Example of the phovea_vis/vis.ts extension being registered in the *phovea.js* file:
  
-```
+```js
   registry.push('vis', 'table', function () {
     return System.import('./src/table');
   }, {
@@ -77,13 +91,15 @@ Example of the phovea_vis/vis.ts extension being registered:
 ```
  
 Currently there are two types of extensions:
-    1. 'datatype' ->  all the data structures provided by phovea_core 
-    2. 'vis' -> 'pre made' visualizations provided by phovea_vis.
 
-### Phovea Data Structures
-*https://github.com/phovea/phovea_core*
+1. `datatype` ->  all the data structures provided by phovea_core 
+2. `vis` -> 'pre made' visualizations provided by phovea_vis.
 
-The current set of Phovea Data structures provided are: 
+
+
+## Phovea Data Structures
+
+The current set of Phovea data structures provided in the [Phovea core](https://github.com/phovea/phovea_core) are: 
 
 1. Matrix
 2. Table
@@ -94,7 +110,7 @@ The current set of Phovea Data structures provided are:
 All the data structure implement the IDataType Interface:
 *source: https://github.com/phovea/phovea_core/blob/master/src/datatype.ts*
  
-``` 
+```ts
 /**
  * basic data type interface
  */
@@ -118,7 +134,7 @@ export interface IDataType extends ISelectAble, IPersistable {
 All data structures take as input data in the format described by the IDataDescription Interface: 
 *source: https://github.com/phovea/phovea_core/blob/master/src/datatype.ts *
 
-```
+```ts
 /**
  * basic description elements
  */
