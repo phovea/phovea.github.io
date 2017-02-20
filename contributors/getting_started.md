@@ -138,19 +138,19 @@ npm start
 <a id="server-client-app"></a>
 ## Creating a new Phovea Server-Client Application from Scratch
 
-Here we assume that you want to create a client side app, called `myApp`, that speaks to a server side app `myApp_server`. 
+Here we assume that you want to create a client side app, called `myapp`, that speaks to a server side app `myapp_server`. Note that plugins must always be lowercase. 
 
  1. Install [Docker](https://www.docker.com/).
  2. Install Phovea Generator `sudo npm install -g yo github:phovea/generator-phovea`
- 3. `mkdir myApp_workspace`
- 4. `cd myApp_workspace`
+ 3. `mkdir myapp_workspace`
+ 4. `cd myapp_workspace`
  
- Here `myApp_workspace` is a name of your choosing. This folder will hold the workspace, and nested within the different plugins. 
+ Here `myapp_workspace` is a name of your choosing. This folder will hold the workspace, and nested within the different plugins. 
  
 Create the client side as follows:
 
-4. `mkdir myApp`
-5. `cd myApp`
+4. `mkdir myapp`
+5. `cd myapp`
 6. Run `yo phovea:init-app` and follow the prompts. This initializes a new client app.
 7. `cd ..`
 
@@ -160,7 +160,7 @@ Create the server side as follows:
 
 8. `mkdir app_server`
 9. `cd app_server`
-10. Run `yo phovea:init-slib` and follow the prompts. The promt asks you for your application's name, put in `myApp`. This initializes a new server app.
+10. Run `yo phovea:init-slib` and follow the prompts. The promt asks you for your application's name, put in `myapp`. This initializes a new server app.
 11. `cd ..`
 
 Clone and resolve the `phovea_server` as follows:
@@ -195,7 +195,7 @@ Keep Docker running.
 Keep Docker running.
 
 1. `docker-compose up -d`
-2. `npm run start:myApp`
+2. `npm run start:myapp`
 
 Now in the browser check adress `http://localhost:8080/` for accessing the app or `http://localhost:8080/api/hello_world/` for accessing the API.
 
