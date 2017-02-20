@@ -138,29 +138,50 @@ npm start
 <a id="server-client-app"></a>
 ## Creating a new Phovea Server-Client Application from Scratch
 
+Here we assume that you want to create a client side app, called `myApp`, that speaks to a server side app `myApp_server`. 
+
  1. Install [Docker](https://www.docker.com/).
  2. Install Phovea Generator `sudo npm install -g yo github:phovea/generator-phovea`
- 2. `mkdir app_folder`
- 3. `cd app_folder`
+ 3. `mkdir myApp_workspace`
+ 4. `cd myApp_workspace`
+ 
+ Here `myApp_workspace` is a name of your choosing. This folder will hold the workspace, and nested within the different plugins. 
  
 Create the client side as follows:
 
-4. `mkdir app`
-5. `cd app`
-6. Run` yo phovea:init-app` and follow the prompts. 
+4. `mkdir myApp`
+5. `cd myApp`
+6. Run `yo phovea:init-app` and follow the prompts. This initializes a new client app.
 7. `cd ..`
+
+If you have an existing phovea client side app, you can just clone that repository into this directory. 
 
 Create the server side as follows:
 
 8. `mkdir app_server`
 9. `cd app_server`
-10. Run `yo phovea:init-slib` and follow the prompts
+10. Run `yo phovea:init-slib` and follow the prompts. The promt asks you for your application's name, put in `myApp`. This initializes a new server app.
 11. `cd ..`
 
 Clone and resolve the `phovea_server` as follows:
 
 12. Run `yo phovea:clone phovea_server` and follow the prompts.
 13. `yo phovea:workspace`
+
+If you are developing against the `develop` branch (which is very likely), you must also switch the repository to the `develop` branch. 
+
+### Adding other plugins 
+
+yo will resolve all dependencies for you. If you, however, want to also edit things like `phovea_core` at the same time, you can just check it out and switch it to the right branch:
+
+```bash 
+yo phovea:clone phovea_core
+cd phovea_core
+git checkout develop
+```
+
+If you want to change any phovea plugins, you should first create a new feature branch. Don't commit directly to develop or master. 
+
 
 ### Installing
 
@@ -174,7 +195,7 @@ Keep Docker running.
 Keep Docker running.
 
 1. `docker-compose up -d`
-2. `npm run start:app`
+2. `npm run start:myApp`
 
 Now in the browser check adress `http://localhost:8080/` for accessing the app or `http://localhost:8080/api/hello_world/` for accessing the API.
 
