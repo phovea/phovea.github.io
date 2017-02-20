@@ -158,8 +158,8 @@ If you have an existing phovea client side app, you can just clone that reposito
 
 Create the server side as follows:
 
-8. `mkdir app_server`
-9. `cd app_server`
+8. `mkdir myapp_server`
+9. `cd myapp_server`
 10. Run `yo phovea:init-slib` and follow the prompts. The promt asks you for your application's name, put in `myapp`. This initializes a new server app.
 11. `cd ..`
 
