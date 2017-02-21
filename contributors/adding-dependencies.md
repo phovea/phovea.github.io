@@ -67,14 +67,7 @@ import {scaleLinear} from 'd3-scale';
 
 Import a [jQuery UI](http://jqueryui.com/) widget, here [Sortable](http://jqueryui.com/sortable/), as follows:
 
-1. Add the dependencies to *package.json*
-   *Note:* Avoid dependency duplication when using multiple jQuery plugins and import only one jQuery version (if possible)
-```json
-"dependencies": {
-  "jquery": "3.1.1",
-  "jquery-ui": "1.12.1"
-},
-```
+1. Run `npm install -save jquery-ui` in the plugin directory
 2. [Update your setup](#update-setup)
 3. Import the widget in TypeScript, as follows:
 ```js
