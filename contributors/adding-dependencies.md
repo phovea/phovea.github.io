@@ -63,6 +63,20 @@ Note, that you must import the specific D3 v4 modules to your TypeScript file as
 ```js
 import {scaleLinear} from 'd3-scale';
 ```
+### Importing a jQuery UI widget
+
+Import a [jQuery UI](http://jqueryui.com/) widget, here [Sortable](http://jqueryui.com/sortable/), as follows:
+
+1. Run `npm install -save jquery-ui` in the plugin directory
+2. [Update your setup](#update-setup)
+3. Import the widget in TypeScript, as follows:
+```js
+import * as $ from `jquery';
+import 'jquery-ui/ui/widgets/sortable'; // specify the widget here
+import 'style-loader!css-loader!jquery-ui/themes/base/all.css'; // use Webpack CSS loader to import base style for all widgets
+```
+
+**Important:** Make sure you specified the particular widget and use the style loader in the `import` statements.
 
 -----
 
