@@ -63,6 +63,21 @@ Note, that you must import the specific D3 v4 modules to your TypeScript file as
 ```js
 import {scaleLinear} from 'd3-scale';
 ```
+**Importing jquery-ui**
+
+1.Add the dependencies in package.json as :
+```json
+"dependencies": {
+   "jquery-ui": "1.12.1"
+  },
+```
+2.[Update your setup](#update-setup)
+
+3.Importing jquery-ui in pycharm
+
+`import 'jquery-ui/ui/widgets/sortable';`
+
+You need to specify the particular widget. For example sortable in this case.
 
 -----
 
