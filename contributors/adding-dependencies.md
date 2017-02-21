@@ -73,10 +73,10 @@ Import a [jQuery UI](http://jqueryui.com/) widget, here [Sortable](http://jquery
 ```js
 import * as $ from `jquery';
 import 'jquery-ui/ui/widgets/sortable'; // specify the widget here
-import 'style-loader!css-loader!jquery-ui/ui/themes/base/all.css'; // use Webpack CSS loader to import base style for all widgets
+import 'style-loader!css-loader!jquery-ui/themes/base/all.css'; // use Webpack CSS loader to import base style for all widgets
 ```
 
-**Important:** Make sure you specified the particular widget in the `import` statement.
+**Important:** Make sure you specified the particular widget and use the style loader in the `import` statements.
 
 -----
 
