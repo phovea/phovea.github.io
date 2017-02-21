@@ -63,21 +63,26 @@ Note, that you must import the specific D3 v4 modules to your TypeScript file as
 ```js
 import {scaleLinear} from 'd3-scale';
 ```
-**Importing jquery-ui**
+### Importing a jQuery UI widget
 
-1.Add the dependencies in package.json as :
+Import a [jQuery UI](http://jqueryui.com/) widget, here [Sortable](http://jqueryui.com/sortable/), as follows:
+
+1. Add the dependencies to *package.json*
+   *Note:* Avoid dependency duplication when using multiple jQuery plugins and import only one jQuery version (if possible)
 ```json
 "dependencies": {
-   "jquery-ui": "1.12.1"
-  },
+  "jquery": "3.1.1",
+  "jquery-ui": "1.12.1"
+},
 ```
-2.[Update your setup](#update-setup)
+2. [Update your setup](#update-setup)
+3. Import the widget in TypeScript, as follows:
+```js
+import * as $ from `jquery';
+import 'jquery-ui/ui/widgets/sortable'; // specify the widget here
+```
 
-3.Importing jquery-ui in pycharm
-
-`import 'jquery-ui/ui/widgets/sortable';`
-
-You need to specify the particular widget. For example sortable in this case.
+**Important:** Make sure you specified the particular widget in the `import` statement.
 
 -----
 
