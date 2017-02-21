@@ -73,6 +73,7 @@ Import a [jQuery UI](http://jqueryui.com/) widget, here [Sortable](http://jquery
 ```js
 import * as $ from `jquery';
 import 'jquery-ui/ui/widgets/sortable'; // specify the widget here
+import 'jquery-ui/ui/themes/base/all.css'; // base style for all widgets
 ```
 
 **Important:** Make sure you specified the particular widget in the `import` statement.
