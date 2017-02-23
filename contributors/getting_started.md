@@ -154,7 +154,7 @@ Create the client side as follows:
 6. Run `yo phovea:init-app` and follow the prompts. This initializes a new client app.
 7. `cd ..`
 
-If you have an existing phovea client side app, you can just clone that repository into this directory. 
+If you have an existing phovea client side app, you can just clone that repository into this directory. If your existing repository was a client-only repository, make sure to update the client only flag in `"clientOnly": false,`
 
 Create the server side as follows:
 

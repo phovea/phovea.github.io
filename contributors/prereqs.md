@@ -71,6 +71,9 @@ organization on Github. If you haven't used git itself before, please read throu
 [this tutorial](https://git-scm.com/docs/gittutorial),
 or try this [interactive one](https://try.github.io/).
 
+You will also need to set-up SSH access to github. Here's [how to do that](https://help.github.com/articles/connecting-to-github-with-ssh/). 
+
+
 To make contributions, please make sure you're up to date, and then branch from *master*.
 When you're done, make a pull request (PR) for your branch on Github. The primary maintainer for
 each project should keep an eye on issues and PRs as they come in, but feel free to nudge them:
