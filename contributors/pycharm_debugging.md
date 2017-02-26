@@ -18,7 +18,7 @@ In order to debug the server using PyCharm you need to do two things:
 Restart docker with the debug mixin
 
 ```
-./docker-compose.debug up
+./docker-compose-debug up
 ```
 
 <a id="create-remote-python-interpreter"></a>
