@@ -47,7 +47,9 @@ docker-compose up
  1. Uncheck `PyQt compatible`
 1. Apply changes -> Close settings dialog
 
-![PyCharm Python debugger](/assets/images/doc_screenshots/pycharm_python-debugger.png )
+![PyCharm Python remote interpreter](/assets/images/doc_screenshots/pycharm_python-remote-interpreter.png)
+
+![PyCharm Python debugger](/assets/images/doc_screenshots/pycharm_python-debugger.png)
 
 ## Create a phovea_server debug launch configuration
 
