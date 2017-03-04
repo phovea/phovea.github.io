@@ -1,23 +1,35 @@
 ---
 layout: documentation
-title: Data Structures TODO
+title: Data Structures Intro
 order: 3
 ---
 
-TODO: If this is still useful, let's get some live examples.
+Phovea supports simple loading and handling of various types data. It provides data structures for lazy loading and accessing data using promises. These data structures are implemented in the [core plugin](https://github.com/phovea/phovea_core).
 
-Phovea supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/phovea/phovea_core).
+Phovea currently supports the following data types: 
+
+ * Matrices - a tabular structure of rows and columns where all columns and rows are of the same data type.
+ * Tables - a tabular structure of rows and columns where the columns can be of different data types, e.g., different numerical ranges, mixed categorical, string, and numerical, etc.
+ * Vectors - a 1-D data structure where all values have to be of the same type that can be used individually but that's also used in matrices and tables.
+ * Stratifications - a data structure used for grouping elements.
+ 
+**In addition to this high-level description of the dataset concepts, please refer to the [Phovea Demo Application](https://github.com/Caleydo/phovea_demos/) and to the [source code](https://github.com/phovea/phovea_core) for information on how to use these.** 
 
 ## Loading Datasets
 
 The way data is accessed in Phovea can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different plugins and concrete implementations of data structure interfaces how the data is accessed.
+
+The function [`loadLocalData()` in the demo project](https://github.com/Caleydo/phovea_demos/blob/master/src/UsingTable.ts) shows how you can load a CSV file from a local directory. Note that the data has to be hosted in a top-level data directory (TODO: is that true?) and that you also have to provide a JSON file called `index.json` describing the dataset - more on that in the next section. 
+
+An alternative way is to use the **parseRemoteMatrix** method specified in `phovea_d3/parser`. It takes the dataset file path as argument and returns a promise for an associated data structure object.
+
+An alternative to loading a local dataset is to run a server that loads the data for you, and then retrieve the data. To do that, you have to create a server plugin (TODO: is that true or do I just have to run a server?) and store the csv file in the top-level `data` folder and again provide a JSON file called `index.json` in the same directory. If you do that, the server will automatically load the dataset, and the dataset will be accessible via various functions (more on that later). 
 
 ### Dataset Parsing
 
 Tabular datasets in a form of .csv files can be loaded by providing the dataset file itself and a definition of the dataset. The definition is provided in an `index.json` file and could look like this:
 
 ```json
-
 [
   {
     "id": "anscombe_II",
@@ -37,6 +49,8 @@ Tabular datasets in a form of .csv files can be loaded by providing the dataset 
 
 ```
 
+See also the [examples here](https://github.com/Caleydo/phovea_demos/blob/master/data/index.json)
+
 The following properties are common to all supported dataset types:
 
 * `id` A string specifying a dataset id.
@@ -46,15 +60,15 @@ The following properties are common to all supported dataset types:
 * `size` The size of the dataset. In case of a matrix, number of rows and columns.
 * `separator`: String that is used as separator in the data file. Default: ",".
 
-An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [phovea_sample_app](https://github.com/phovea/phovea_sample_app).
+An `index.json` file may contain definitions for multiple datasets. 
 
 ### Dataset Access
 
-There are two basic ways to access the data files from the client code. The first way is the **get** method specified in `phovea_core/data`. It takes the dataset id specified in the dataset defininition as parameter and returns a promise for an associated data structure object (Matrix, Table, Vector, Stratification). Note that this method involves code from the server side of Phovea and thus will not work with the lightweight client library version.
-
-The second way is the **parseRemoteMatrix** method specified in `phovea_d3/parser`. It takes the dataset file path as argument and returns a promise for an associated data structure object. In this case, the `index.json` file must be located in the same directory as the dataset file. This method will also work for the client library version of Phovea.
+There are two basic ways to access the data files from the client code. The first way is the **get** method specified in `phovea_core/data`. It takes the dataset id specified in the dataset defininition as parameter and returns a promise for an associated data structure object (Matrix, Table, Vector, Stratification). Note that this method involves code from the server side of Phovea and thus will not work with the lightweight client library version. 
 
 Another way to access datasets is to use the **list** method from `phovea_core/data`. This method looks for dataset definitions in all Phovea plugins. All found datasets are accessible via a promise to an array of datastructure objects. This method will not work in the client library version.
+
+See the various ways to access dataset in the method [`loadDataFromServer()` in the demo project](https://github.com/Caleydo/phovea_demos/blob/master/src/UsingTable.ts).
 
 ## Data Structures
 

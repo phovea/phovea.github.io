@@ -66,8 +66,10 @@ to future developers.
 ## Version Control
 
 All source code and documentation for Phovea is hosted on [Github](https://github.com/phovea).
-Projects built with Phovea can be found in the distinct [Caleydo](https://github.com/caleydo)
-organization on Github. If you haven't used git itself before, please read through
+Projects built with Phovea as part of the Caleydo project can be found in the distinct [Caleydo](https://github.com/caleydo)
+organization on Github. 
+
+If you haven't used git itself before, please read through
 [this tutorial](https://git-scm.com/docs/gittutorial),
 or try this [interactive one](https://try.github.io/).
 
@@ -81,8 +83,8 @@ each project should keep an eye on issues and PRs as they come in, but feel free
 |
 | generator-phovea             | @sgratzl  | @cnobre      |
 | phovea_bootstrap_fontawesome | @thinkh   | @mccalluc    |
-| phovea_core                  | @thinkh   | @aaljuhani   |
-| phovea_importer              | @thinkh   | @pkerpedjiev |
+| phovea_core                  | @thinkh   | @sgratzl
+| phovea_importer              | @thinkh   | @aaljuhani |
 | phovea_bundle_lib            | @sgratzl  | @mccalluc    |
 | phovea_clue                  | @thinkh   | @cnobre      |
 | phovea_processing_queue      | @thinkh   | @bikramkawan |
@@ -121,7 +123,9 @@ As the project develops we will used tagged releases, following
 
 Each Phoveo repo has a brief README, but documentation of the over-all project can be found here,
 as you've already discovered. The source code for the documentation is itself available
-[on github](https://github.com/phovea/phovea.github.io). READMEs, this documentation, and Github
+[on github](https://github.com/phovea/phovea.github.io). 
+
+READMEs, this documentation, and Github
 issue reports all use [Markdown](https://guides.github.com/features/mastering-markdown/).
 Although HTML can be used within Markdown, it is usually not a good idea.
 
@@ -146,7 +150,7 @@ than committing to master: This gives the system time to do a basic syntax check
 
 ## Packaging
 
-We are using NPM's [`package.json`](https://docs.npmjs.com/files/package.json) to manage dependencies between components and external (web) libraries. Phovea plugins can be published to the NPM registry. Note, however, that we are *not* really using the Node.js
+We are using NPM's [`package.json`](https://docs.npmjs.com/files/package.json) to manage dependencies between components and external (web) libraries. Phovea plugins can be published to the NPM registry. Note, however, that we are *not* using the Node.js
 language.
 
 New projects can be created with the [Phovea Generator](https://github.com/phovea/generator-phovea/) that is a [Yeoman](http://yeoman.io/) generators.
@@ -163,7 +167,7 @@ to Javascript. TypeScript adds a typesystem to Javascript, and also lets you use
 versions of the ECMAScript even on older browsers.  As part of the build process, multiple libraries and assets
 are combined using [Webpack](https://webpack.github.io/).
 
-The visualizations in Phovea are created with [D3](https://github.com/d3/d3/wiki).
+The visualizations in Phovea are created (mostly) with [D3](https://github.com/d3/d3/wiki).
 
 [JavaScript Promises](https://developers.google.com/web/fundamentals/getting-started/primers/promises)
 are used throughout Phovea. The main idea of Promises is that asynchronous processes can be handled in
