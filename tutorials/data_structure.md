@@ -23,7 +23,7 @@ The function [`loadLocalData()` in the demo project](https://github.com/Caleydo/
 
 An alternative way is to use the **parseRemoteMatrix** method specified in `phovea_d3/parser`. It takes the dataset file path as argument and returns a promise for an associated data structure object.
 
-An alternative to loading a local dataset is to run a server that loads the data for you, and then retrieve the data. To do that, you have to create a server plugin (TODO: is that true or do I just have to run a server?) and store the csv file in the top-level `data` folder and again provide a JSON file called `index.json` in the same directory. If you do that, the server will automatically load the dataset, and the dataset will be accessible via various functions (more on that later). 
+An alternative to loading a local dataset is to run a server that loads the data for you, and then retrieve the data. To do that, you have to run a server via docker using the [workspace approach](getting_started/#server-client-app) and store the csv file in the top-level `data` folder and again provide a JSON file called `index.json` in the same directory. If you do that, the server will automatically load the dataset, and the dataset will be accessible via various functions (more on that later).
 
 ### Dataset Parsing
 
