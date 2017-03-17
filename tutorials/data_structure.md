@@ -40,6 +40,7 @@ Tabular datasets in a form of .csv files can be loaded by providing the dataset 
     "rowtype": "row",
     "coltype": "dimension",
     "separator": ";",
+    "quotechar": "\"",
     "value": {
       "type": "real",
       "range": [0, 12]
@@ -59,6 +60,7 @@ The following properties are common to all supported dataset types:
 * `type` The dataset type. Currently `matrix`, `table`, `vector`, and `stratification` are supported.
 * `size` The size of the dataset. In case of a matrix, number of rows and columns.
 * `separator`: String that is used as separator in the data file. Default: ",".
+* `quotechar`: String that is used to indicate how to escape cell content, so that the separator can be used within a cell. For example, with separator `,`, this wouldn't work: `red, green`. Instead, we use `"red, green"`. Defaults to `|`.
 
 An `index.json` file may contain definitions for multiple datasets. 
 
@@ -173,6 +175,7 @@ This is how the definition of a table file could look like:
     "size": [10, 4],
     "type": "table",
     "idtype": "patient",
+    "quotechar": "\"",
     "columns": [
     {
       "name": "Gender",
