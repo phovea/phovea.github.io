@@ -23,7 +23,7 @@ The function [`loadLocalData()` in the demo project](https://github.com/Caleydo/
 
 An alternative way is to use the **parseRemoteMatrix** method specified in `phovea_d3/parser`. It takes the dataset file path as argument and returns a promise for an associated data structure object.
 
-An alternative to loading a local dataset is to run a server that loads the data for you, and then retrieve the data. To do that, you have to create a server plugin (TODO: is that true or do I just have to run a server?) and store the csv file in the top-level `data` folder and again provide a JSON file called `index.json` in the same directory. If you do that, the server will automatically load the dataset, and the dataset will be accessible via various functions (more on that later). 
+An alternative to loading a local dataset is to run a server that loads the data for you, and then retrieve the data. To do that, you have to run a server via docker using the [workspace approach](getting_started/#server-client-app) and store the csv file in the top-level `data` folder and again provide a JSON file called `index.json` in the same directory. If you do that, the server will automatically load the dataset, and the dataset will be accessible via various functions (more on that later).
 
 ### Dataset Parsing
 
@@ -40,6 +40,7 @@ Tabular datasets in a form of .csv files can be loaded by providing the dataset 
     "rowtype": "row",
     "coltype": "dimension",
     "separator": ";",
+    "quotechar": "\"",
     "value": {
       "type": "real",
       "range": [0, 12]
@@ -59,6 +60,7 @@ The following properties are common to all supported dataset types:
 * `type` The dataset type. Currently `matrix`, `table`, `vector`, and `stratification` are supported.
 * `size` The size of the dataset. In case of a matrix, number of rows and columns.
 * `separator`: String that is used as separator in the data file. Default: ",".
+* `quotechar`: String that is used to indicate how to escape cell content, so that the separator can be used within a cell. For example, with separator `,`, this wouldn't work: `red, green`. Instead, we use `"red, green"`. Defaults to `|`.
 
 An `index.json` file may contain definitions for multiple datasets. 
 
@@ -173,6 +175,7 @@ This is how the definition of a table file could look like:
     "size": [10, 4],
     "type": "table",
     "idtype": "patient",
+    "quotechar": "\"",
     "columns": [
     {
       "name": "Gender",
