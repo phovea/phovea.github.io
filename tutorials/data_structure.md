@@ -155,6 +155,8 @@ parser.parseRemoteMatrix('./data/anscombe_2.csv').then(function (matrix) {
 
 ### Table
 
+**Note: You can use a [generator](https://github.com/Caleydo/phovea_json_generator) to create table configurations.**
+
 Like the matrix, a table is a two dimensional data structure with rows and columns. In contrast to the matrix, only the rows specify entities using ids, whereas the columns represent different attributes of an entity. For example, if rows represent patients, the columns could represent attributes like gender or age.
 
 | Patient        | Gender        | Age  |  Value |
