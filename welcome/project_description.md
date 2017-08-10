@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title:  Project Description
+exclude_from_menu: true
 ---
 
 {% include todo.html %}
@@ -22,4 +23,3 @@ title:  Project Description
  * Provides NumPy like data structures.
  * Provides plugin management for larger projects.
  * Handles client-server communication for you.
-
